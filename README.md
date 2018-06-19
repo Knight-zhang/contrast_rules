@@ -1,2 +1,2 @@
-# Apriori
-This is a temprorary repository for studying an already given Apriori algorithm
+# carapriori
+This is a temprorary repository 
