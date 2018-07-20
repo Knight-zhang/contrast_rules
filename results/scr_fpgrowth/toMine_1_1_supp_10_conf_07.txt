@@ -1,0 +1,343 @@
+LHS	RHS	LHS_supp_count	RULE_supp_count	LHS_supp	RULE_supp	RULE_conf	links
+02-Det. house,03-Vechicl.=1,12-Husb.Income=02	YES	20	14	0.00950570342205	0.00665399239544	0.7	3,2
+02-Apart.,03-Vechicl.=1,12-Husb.Income=06	NO	28	25	0.0133079847909	0.0118821292776	0.892857142857	1
+02-Apart.,03-Vechicl.=2,12-Husb.Income=02	NO	48	34	0.0228136882129	0.0161596958175	0.708333333333	1
+
+01-H. owned,02-Att. house,03-Vechicl.=2,12-Husb.Income=04	NO	20	14	0.00950570342205	0.00665399239544	0.7	7
+01-H. not owned,02-Apart.,03-Vechicl.=1,12-Husb.Income=06	NO	25	22	0.0118821292776	0.0104562737643	0.88	7,8
+01-H. not owned,02-Det. house,03-Vechicl.=2,12-Husb.Income=05	NO	37	26	0.0175855513308	0.0123574144487	0.702702702703	7,8
+01-H. not owned,02-Apart.,03-Vechicl.=2,12-Husb.Income=06	NO	24	19	0.0114068441065	0.00903041825095	0.791666666667	7,8
+01-H. not owned,02-Apart.,03-Vechicl.=2,12-Husb.Income=05	NO	94	72	0.0446768060837	0.0342205323194	0.765957446809	7,8
+01-H. not owned,02-Apart.,03-Vechicl.=2,12-Husb.Income=02	NO	48	34	0.0228136882129	0.0161596958175	0.708333333333	7,8
+01-H. not owned,02-Det. house,03-Vechicl.=1,12-Husb.Income=04	YES	24	17	0.0114068441065	0.00807984790875	0.708333333333	1,2,3,4,5,6,9,10
+01-H. not owned,02-Det. house,03-Vechicl.=1,12-Husb.Income=02	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	2,3,4,5,6,9,10
+01-H. owned,02-Det. house,03-Vechicl.=2,12-Husb.Income=03	NO	20	14	0.00950570342205	0.00665399239544	0.7	7,8
+01-H. owned,02-Det. house,03-Vechicl.=2,12-Husb.Income=06	NO	21	15	0.00998098859316	0.00712927756654	0.714285714286	7,8
+
+01-H. owned,02-Att. house,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	NO	18	13	0.00855513307985	0.00617870722433	0.722222222222	5
+01-H. not owned,02-Det. house,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	28	20	0.0133079847909	0.00950570342205	0.714285714286	5
+01-H. not owned,02-Apart.,03-Vechicl.=1,11-Wife.work.class=PrivateWorker,12-Husb.Income=06	NO	13	12	0.00617870722433	0.00570342205323	0.923076923077	5
+01-H. owned,02-Det. house,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=06	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	5
+01-H. not owned,02-Att. house,03-Vechicl.=1,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	19	14	0.00903041825095	0.00665399239544	0.736842105263	1,2,3,4,6,7,8
+01-H. not owned,02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=06	NO	23	18	0.0109315589354	0.00855513307985	0.782608695652	5
+01-H. not owned,02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	75	59	0.0356463878327	0.0280418250951	0.786666666667	5
+01-H. not owned,02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=02	NO	31	24	0.0147338403042	0.0114068441065	0.774193548387	5
+
+01-H. not owned,02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	22	18	0.0104562737643	0.00855513307985	0.818181818182	2
+01-H. not owned,02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=05	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	1,3
+01-H. not owned,02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	22	18	0.0104562737643	0.00855513307985	0.818181818182	2
+
+01-H. not owned,02-Det. house,03-Vechicl.=2,07-Wife:no college,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	16	13	0.00760456273764	0.00617870722433	0.8125	2
+01-H. not owned,02-Apart.,03-Vechicl.=2,07-Wife:no college,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	22	17	0.0104562737643	0.00807984790875	0.772727272727	1
+
+01-H. not owned,02-Det. house,03-Vechicl.=2,07-Wife:no college,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	21	15	0.00998098859316	0.00712927756654	0.714285714286	2
+01-H. not owned,02-Det. house,03-Vechicl.=2,07-Wife:no college,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	1
+
+01-H. not owned,02-Apart.,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	76	62	0.0361216730038	0.0294676806084	0.815789473684	4
+01-H. not owned,02-Apart.,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=06	NO	20	15	0.00950570342205	0.00712927756654	0.75	4
+01-H. not owned,02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,12-Husb.Income=06	NO	24	21	0.0114068441065	0.00998098859316	0.875	4
+01-H. not owned,02-Det. house,03-Vechicl.=3,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	1,2,3,5,6
+01-H. owned,02-Det. house,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	NO	15	12	0.00712927756654	0.00570342205323	0.8	4
+01-H. owned,02-Att. house,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	4
+
+01-H. not owned,02-Apart.,03-Vechicl.=1,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	45	34	0.0213878326996	0.0161596958175	0.755555555556	2
+01-H. not owned,02-Apart.,03-Vechicl.=2,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	12	11	0.00570342205323	0.00522813688213	0.916666666667	1
+
+01-H. not owned,02-Apart.,03-Vechicl.=2,06-Husb.:school,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	2
+01-H. not owned,02-Det. house,03-Vechicl.=2,06-Husb.:school,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	20	14	0.00950570342205	0.00665399239544	0.7	1
+
+01-H. not owned,02-Apart.,03-Vechicl.=2,09-Wife:Mexico,12-Husb.Income=05	NO	16	13	0.00760456273764	0.00617870722433	0.8125	2,3
+01-H. not owned,02-Apart.,03-Vechicl.=1,09-Wife:Mexico,12-Husb.Income=04	YES	48	35	0.0228136882129	0.0166349809886	0.729166666667	1
+01-H. owned,02-Det. house,03-Vechicl.=2,09-Wife:Mexico,12-Husb.Income=05	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	1
+
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:Other American,12-Husb.Income=04	NO	25	18	0.0118821292776	0.00855513307985	0.72	2
+01-H. not owned,02-Det. house,03-Vechicl.=2,08-Husb.:Other American,12-Husb.Income=04	YES	13	11	0.00617870722433	0.00522813688213	0.846153846154	1
+
+01-H. not owned,02-Det. house,03-Vechicl.=2,06-Husb.:school,12-Husb.Income=04	YES	24	17	0.0114068441065	0.00807984790875	0.708333333333	2
+01-H. not owned,02-Apart.,03-Vechicl.=2,06-Husb.:school,12-Husb.Income=03	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	1,3
+01-H. not owned,02-Det. house,03-Vechicl.=1,06-Husb.:school,12-Husb.Income=04	YES	15	12	0.00712927756654	0.00570342205323	0.8	2
+
+02-Apart.,03-Vechicl.=1,11-Wife.work.class=PrivateWorker,12-Husb.Income=06	NO	14	13	0.00665399239544	0.00617870722433	0.928571428571	4
+02-Apart.,03-Vechicl.=1,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	27	19	0.0128326996198	0.00903041825095	0.703703703704	3
+02-Apart.,03-Vechicl.=1,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	2
+02-Att. house,03-Vechicl.=1,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	19	14	0.00903041825095	0.00665399239544	0.736842105263	1,5,6,7
+02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=06	NO	26	21	0.0123574144487	0.00998098859316	0.807692307692	4
+02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	78	62	0.037072243346	0.0294676806084	0.794871794872	4
+02-Apart.,03-Vechicl.=2,11-Wife.work.class=PrivateWorker,12-Husb.Income=02	NO	31	24	0.0147338403042	0.0114068441065	0.774193548387	4
+
+02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	22	18	0.0104562737643	0.00855513307985	0.818181818182	2
+02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=05	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	1,3
+02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	23	18	0.0109315589354	0.00855513307985	0.782608695652	2
+
+02-Apart.,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	80	66	0.0380228136882	0.0313688212928	0.825	4
+02-Apart.,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=06	NO	24	19	0.0114068441065	0.00903041825095	0.791666666667	4
+02-Apart.,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,12-Husb.Income=06	NO	25	22	0.0118821292776	0.0104562737643	0.88	4
+02-Att. house,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	13	10	0.00617870722433	0.00475285171103	0.769230769231	1,2,3,5
+02-Det. house,03-Vechicl.=2,10-Husb.work.class=PrivateWorker,12-Husb.Income=06	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	4
+
+02-Apart.,03-Vechicl.=1,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	47	34	0.0223384030418	0.0161596958175	0.723404255319	2
+02-Apart.,03-Vechicl.=2,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	13	12	0.00617870722433	0.00570342205323	0.923076923077	1
+
+02-Det. house,03-Vechicl.=2,08-Husb.:Other American,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	2
+02-Apart.,03-Vechicl.=2,08-Husb.:Other American,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	NO	20	15	0.00950570342205	0.00712927756654	0.75	1
+
+02-Apart.,03-Vechicl.=2,09-Wife:Mexico,12-Husb.Income=05	NO	17	14	0.00807984790875	0.00665399239544	0.823529411765	2,3
+02-Apart.,03-Vechicl.=1,09-Wife:Mexico,12-Husb.Income=04	YES	50	35	0.0237642585551	0.0166349809886	0.7	1
+02-Det. house,03-Vechicl.=1,09-Wife:Mexico,12-Husb.Income=02	YES	14	12	0.00665399239544	0.00570342205323	0.857142857143	1
+
+02-Det. house,03-Vechicl.=1,07-Wife:no college,12-Husb.Income=04	YES	12	11	0.00570342205323	0.00522813688213	0.916666666667	2
+02-Att. house,03-Vechicl.=2,07-Wife:no college,12-Husb.Income=04	NO	19	14	0.00903041825095	0.00665399239544	0.736842105263	1
+
+02-Apart.,03-Vechicl.=2,06-Husb.:no college,07-Wife:no college,12-Husb.Income=03	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	2
+02-Det. house,03-Vechicl.=3,06-Husb.:no college,07-Wife:no college,12-Husb.Income=04	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	1
+
+02-Det. house,03-Vechicl.=1,06-Husb.:school,12-Husb.Income=04	YES	21	15	0.00998098859316	0.00712927756654	0.714285714286	2
+02-Apart.,03-Vechicl.=2,06-Husb.:school,12-Husb.Income=03	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	1
+
+01-H. not owned,03-Vechicl.=1,10-Husb.work.class=GovernmWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	14	12	0.00665399239544	0.00570342205323	0.857142857143	2,3
+01-H. not owned,03-Vechicl.=2,10-Husb.work.class=GovernmWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	NO	24	18	0.0114068441065	0.00855513307985	0.75	1
+01-H. not owned,03-Vechicl.=2,10-Husb.work.class=GovernmWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. not owned,03-Vechicl.=2,09-Wife:Mexico,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	16	13	0.00760456273764	0.00617870722433	0.8125	2
+01-H. not owned,03-Vechicl.=1,09-Wife:Mexico,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	61	43	0.0289923954373	0.0204372623574	0.704918032787	1
+
+01-H. not owned,03-Vechicl.=2,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	18	13	0.00855513307985	0.00617870722433	0.722222222222	2
+01-H. not owned,03-Vechicl.=1,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	1
+
+01-H. not owned,03-Vechicl.=1,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	62	46	0.0294676806084	0.0218631178707	0.741935483871	3
+01-H. owned,03-Vechicl.=2,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	3
+01-H. not owned,03-Vechicl.=2,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	18	14	0.00855513307985	0.00665399239544	0.777777777778	1,2
+
+01-H. not owned,03-Vechicl.=2,08-Husb.:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	14	11	0.00665399239544	0.00522813688213	0.785714285714	2,3
+01-H. owned,03-Vechicl.=2,08-Husb.:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	1
+01-H. not owned,03-Vechicl.=1,08-Husb.:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	63	47	0.0299429657795	0.0223384030418	0.746031746032	1
+
+01-H. owned,03-Vechicl.=2,09-Wife:Mexico,12-Husb.Income=05	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	3
+01-H. not owned,03-Vechicl.=1,09-Wife:Mexico,12-Husb.Income=04	YES	69	49	0.0327946768061	0.023288973384	0.710144927536	3
+01-H. not owned,03-Vechicl.=2,09-Wife:Mexico,12-Husb.Income=05	NO	25	19	0.0118821292776	0.00903041825095	0.76	1,2
+
+01-H. not owned,03-Vechicl.=1,08-Husb.:Latino,12-Husb.Income=03	YES	13	10	0.00617870722433	0.00475285171103	0.769230769231	2
+01-H. not owned,03-Vechicl.=2,08-Husb.:Latino,12-Husb.Income=04	NO	18	13	0.00855513307985	0.00617870722433	0.722222222222	1
+
+01-H. not owned,03-Vechicl.=2,06-Husb.:no college,12-Husb.Income=05	NO	41	29	0.0194866920152	0.013783269962	0.707317073171	3
+01-H. not owned,03-Vechicl.=2,06-Husb.:no college,12-Husb.Income=02	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	3
+01-H. not owned,03-Vechicl.=3,06-Husb.:no college,12-Husb.Income=04	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	1,2
+
+03-Vechicl.=1,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	42	31	0.0199619771863	0.0147338403042	0.738095238095	2
+03-Vechicl.=1,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	1,3
+03-Vechicl.=2,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	17	13	0.00807984790875	0.00617870722433	0.764705882353	2
+
+03-Vechicl.=1,10-Husb.work.class=GovernmWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	14	12	0.00665399239544	0.00570342205323	0.857142857143	2
+03-Vechicl.=2,10-Husb.work.class=GovernmWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	NO	26	20	0.0123574144487	0.00950570342205	0.769230769231	1
+
+03-Vechicl.=1,08-Husb.:Latino,12-Husb.Income=03	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	2
+03-Vechicl.=2,08-Husb.:Latino,12-Husb.Income=04	NO	25	18	0.0118821292776	0.00855513307985	0.72	1
+
+01-H. not owned,02-Apart.,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	42	30	0.0199619771863	0.0142585551331	0.714285714286	3
+01-H. not owned,02-Apart.,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	35	25	0.0166349809886	0.0118821292776	0.714285714286	3
+01-H. not owned,02-Apart.,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	1,2
+
+01-H. not owned,02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	34	28	0.0161596958175	0.0133079847909	0.823529411765	2,4
+01-H. not owned,02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	1,3
+01-H. not owned,02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	29	23	0.013783269962	0.0109315589354	0.793103448276	2,4
+01-H. not owned,02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=05	NO	17	13	0.00807984790875	0.00617870722433	0.764705882353	1,3
+
+01-H. not owned,02-Det. house,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	YES	29	21	0.013783269962	0.00998098859316	0.724137931034	2
+01-H. not owned,02-Apart.,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=02	NO	24	17	0.0114068441065	0.00807984790875	0.708333333333	1
+
+01-H. not owned,02-Det. house,07-Wife:no college,09-Wife:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	2
+01-H. not owned,02-Apart.,07-Wife:no college,09-Wife:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	20	14	0.00950570342205	0.00665399239544	0.7	1
+
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	3,2
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	16	13	0.00760456273764	0.00617870722433	0.8125	1
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=02	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	2
+01-H. not owned,02-Det. house,07-Wife:no college,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	25	19	0.0118821292776	0.00903041825095	0.76	3,1
+01-H. not owned,02-Apart.,07-Wife:no college,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	35	25	0.0166349809886	0.0118821292776	0.714285714286	2
+
+01-H. owned,02-Det. house,09-Wife:Mexico,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	2
+01-H. not owned,02-Apart.,09-Wife:Mexico,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=03	NO	14	11	0.00665399239544	0.00522813688213	0.785714285714	2
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	18	14	0.00855513307985	0.00665399239544	0.777777777778	2
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	20	14	0.00950570342205	0.00665399239544	0.7	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,11-Wife.work.class=PrivateWorker,12-Husb.Income=02	NO	19	15	0.00903041825095	0.00712927756654	0.789473684211	2
+01-H. not owned,02-Det. house,07-Wife:no college,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	32	23	0.0152091254753	0.0109315589354	0.71875	1
+
+01-H. not owned,02-Det. house,06-Husb.:school,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	39	29	0.018536121673	0.013783269962	0.74358974359	2
+01-H. not owned,02-Det. house,06-Husb.:school,11-Wife.work.class=PrivateWorker,12-Husb.Income=05	NO	14	11	0.00665399239544	0.00522813688213	0.785714285714	1
+
+01-H. not owned,02-Apart.,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	19	14	0.00903041825095	0.00665399239544	0.736842105263	2,3,4
+01-H. not owned,02-Det. house,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=02	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	1
+01-H. not owned,02-Det. house,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	YES	37	27	0.0175855513308	0.0128326996198	0.72972972973	1
+01-H. owned,02-Det. house,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	YES	14	11	0.00665399239544	0.00522813688213	0.785714285714	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	NO	12	10	0.00570342205323	0.00475285171103	0.833333333333	2
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	13	10	0.00617870722433	0.00475285171103	0.769230769231	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	NO	19	14	0.00903041825095	0.00665399239544	0.736842105263	3
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	18	13	0.00855513307985	0.00617870722433	0.722222222222	3
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	1,2
+
+01-H. not owned,02-Det. house,06-Husb.:school,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	2
+01-H. owned,02-Det. house,06-Husb.:school,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,12-Husb.Income=04	NO	14	11	0.00665399239544	0.00522813688213	0.785714285714	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,12-Husb.Income=03	NO	16	13	0.00760456273764	0.00617870722433	0.8125	2
+01-H. not owned,02-Det. house,07-Wife:no college,08-Husb.:West Europe,09-Wife:West Europe,12-Husb.Income=04	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. not owned,02-Det. house,08-Husb.:Other American,12-Husb.Income=04	YES	17	13	0.00807984790875	0.00617870722433	0.764705882353	2
+01-H. not owned,02-Apart.,08-Husb.:Other American,12-Husb.Income=03	NO	16	12	0.00760456273764	0.00570342205323	0.75	1
+
+01-H. owned,02-Det. house,06-Husb.:school,08-Husb.:West Europe,12-Husb.Income=04	NO	16	12	0.00760456273764	0.00570342205323	0.75	2
+01-H. not owned,02-Det. house,06-Husb.:school,08-Husb.:West Europe,12-Husb.Income=04	YES	19	15	0.00903041825095	0.00712927756654	0.789473684211	1
+
+01-H. not owned,02-Apart.,07-Wife:no college,12-Husb.Income=02	NO	27	19	0.0128326996198	0.00903041825095	0.703703703704	2
+01-H. not owned,02-Det. house,07-Wife:no college,12-Husb.Income=04	YES	40	29	0.0190114068441	0.013783269962	0.725	1
+
+01-H. not owned,02-Det. house,06-Husb.:school,12-Husb.Income=04	YES	47	35	0.0223384030418	0.0166349809886	0.744680851064	2
+01-H. not owned,02-Det. house,06-Husb.:school,12-Husb.Income=05	NO	18	13	0.00855513307985	0.00617870722433	0.722222222222	1
+
+02-Apart.,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	15	13	0.00712927756654	0.00617870722433	0.866666666667	2
+02-Det. house,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	1
+
+02-Det. house,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	13	10	0.00617870722433	0.00475285171103	0.769230769231	3,5
+02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	35	28	0.0166349809886	0.0133079847909	0.8	3,5
+02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	1,4,2
+02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	30	23	0.0142585551331	0.0109315589354	0.766666666667	3,5
+02-Apart.,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=05	NO	17	13	0.00807984790875	0.00617870722433	0.764705882353	1,4,2
+
+02-Apart.,08-Husb.:Other American,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	NO	21	15	0.00998098859316	0.00712927756654	0.714285714286	2
+02-Det. house,08-Husb.:Other American,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,12-Husb.Income=04	YES	18	14	0.00855513307985	0.00665399239544	0.777777777778	1
+
+01-H. not owned,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	14	12	0.00665399239544	0.00570342205323	0.857142857143	2
+01-H. not owned,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	59	43	0.0280418250951	0.0204372623574	0.728813559322	1
+
+01-H. not owned,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	14	12	0.00665399239544	0.00570342205323	0.857142857143	2,3
+01-H. not owned,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	47	35	0.0223384030418	0.0166349809886	0.744680851064	1
+01-H. not owned,10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	50	40	0.0237642585551	0.0190114068441	0.8	1
+
+01-H. not owned,08-Husb.:Mexico,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	2
+01-H. owned,08-Husb.:Mexico,09-Wife:Mexico,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	YES	14	12	0.00665399239544	0.00570342205323	0.857142857143	1
+
+11-Wife.work.class=NoWork,12-Husb.Income=03	YES	71	50	0.0337452471483	0.0237642585551	0.704225352113	2
+11-Wife.work.class=NoWork,12-Husb.Income=06	NO	18	15	0.00855513307985	0.00712927756654	0.833333333333	1
+
+10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=06	NO	16	13	0.00760456273764	0.00617870722433	0.8125	2,3
+10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=04	YES	53	38	0.0251901140684	0.0180608365019	0.716981132075	1
+10-Husb.work.class=PrivateWorker,11-Wife.work.class=NoWork,12-Husb.Income=03	YES	61	46	0.0289923954373	0.0218631178707	0.754098360656	1
+
+09-Wife:Latino,10-Husb.work.class=PrivateWorker,12-Husb.Income=05	NO	12	10	0.00570342205323	0.00475285171103	0.833333333333	2
+09-Wife:Latino,10-Husb.work.class=PrivateWorker,12-Husb.Income=03	YES	23	18	0.0109315589354	0.00855513307985	0.782608695652	1
+
+09-Wife:Latino,12-Husb.Income=03	YES	25	19	0.0118821292776	0.00903041825095	0.76	2
+09-Wife:Latino,12-Husb.Income=05	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	1
+
+01-H. owned,02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	NO	25	21	0.0118821292776	0.00998098859316	0.84	4
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	NO	143	110	0.0679657794677	0.0522813688213	0.769230769231	4
+01-H. owned,02-Att. house,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	NO	20	14	0.00950570342205	0.00665399239544	0.7	4
+01-H. not owned,02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	YES	13	11	0.00617870722433	0.00522813688213	0.846153846154	2,1,3
+
+01-H. owned,02-Det. house,03-Vechicl.=3,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	27	19	0.0128326996198	0.00903041825095	0.703703703704	2
+01-H. not owned,02-Det. house,03-Vechicl.=1,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	3,4,1
+01-H. not owned,02-Apart.,03-Vechicl.=2,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	170	127	0.0807984790875	0.06036121673	0.747058823529	2
+01-H. owned,02-Att. house,03-Vechicl.=2,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	23	19	0.0109315589354	0.00903041825095	0.826086956522	2
+
+01-H. not owned,02-Apart.,03-Vechicl.=2,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	31	25	0.0147338403042	0.0118821292776	0.806451612903	2
+01-H. not owned,02-Apart.,03-Vechicl.=1,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	1,3
+01-H. owned,02-Det. house,03-Vechicl.=3,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	11	10	0.00522813688213	0.00475285171103	0.909090909091	2
+
+01-H. owned,02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	31	26	0.0147338403042	0.0123574144487	0.838709677419	2
+01-H. not owned,02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	YES	17	15	0.00807984790875	0.00712927756654	0.882352941176	1,3,4
+01-H. owned,02-Att. house,03-Vechicl.=2,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	23	17	0.0109315589354	0.00807984790875	0.739130434783	2
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	173	134	0.0822243346008	0.0636882129278	0.774566473988	2
+
+01-H. owned,02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	30	26	0.0142585551331	0.0123574144487	0.866666666667	3
+01-H. owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	16	12	0.00760456273764	0.00570342205323	0.75	3
+01-H. not owned,02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	YES	14	12	0.00665399239544	0.00570342205323	0.857142857143	1,4,2,5
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	181	143	0.0860266159696	0.0679657794677	0.790055248619	3
+01-H. owned,02-Att. house,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	20	14	0.00950570342205	0.00665399239544	0.7	3
+
+01-H. not owned,02-Apart.,03-Vechicl.=3,09-Wife:West Europe	NO	13	10	0.00617870722433	0.00475285171103	0.769230769231	6
+01-H. not owned,02-Apart.,03-Vechicl.=2,09-Wife:West Europe	NO	209	159	0.0993346007605	0.0755703422053	0.760765550239	6
+01-H. owned,02-Att. house,03-Vechicl.=2,09-Wife:West Europe	NO	25	21	0.0118821292776	0.00998098859316	0.84	6
+01-H. owned,02-Apart.,03-Vechicl.=2,09-Wife:West Europe	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	6
+01-H. owned,02-Det. house,03-Vechicl.=3,09-Wife:West Europe	NO	32	24	0.0152091254753	0.0114068441065	0.75	6
+01-H. not owned,02-Det. house,03-Vechicl.=1,09-Wife:West Europe	YES	19	14	0.00903041825095	0.00665399239544	0.736842105263	1,2,3,4,5
+
+01-H. owned,02-Att. house,03-Vechicl.=2,08-Husb.:West Europe,09-Wife:West Europe	NO	20	16	0.00950570342205	0.00760456273764	0.8	4
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,09-Wife:West Europe	NO	150	123	0.0712927756654	0.0584600760456	0.82	4
+01-H. owned,02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,09-Wife:West Europe	NO	27	23	0.0128326996198	0.0109315589354	0.851851851852	4
+01-H. not owned,02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,09-Wife:West Europe	YES	11	10	0.00522813688213	0.00475285171103	0.909090909091	1,2,3
+
+01-H. owned,02-Det. house,03-Vechicl.=3,08-Husb.:West Europe	NO	39	34	0.018536121673	0.0161596958175	0.871794871795	5
+01-H. owned,02-Att. house,03-Vechicl.=2,08-Husb.:West Europe	NO	25	18	0.0118821292776	0.00855513307985	0.72	5
+01-H. owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe	NO	18	14	0.00855513307985	0.00665399239544	0.777777777778	5
+01-H. not owned,02-Apart.,03-Vechicl.=2,08-Husb.:West Europe	NO	224	177	0.106463878327	0.0841254752852	0.790178571429	5
+01-H. not owned,02-Det. house,03-Vechicl.=1,08-Husb.:West Europe	YES	21	19	0.00998098859316	0.00903041825095	0.904761904762	3,1,2,4,6
+01-H. not owned,02-Apart.,03-Vechicl.=3,08-Husb.:West Europe	NO	13	10	0.00617870722433	0.00475285171103	0.769230769231	5
+
+01-H. not owned,02-Det. house,03-Vechicl.=1,07-Wife:no college,08-Husb.:West Europe	YES	12	11	0.00570342205323	0.00522813688213	0.916666666667	2
+01-H. owned,02-Det. house,03-Vechicl.=3,07-Wife:no college,08-Husb.:West Europe	NO	15	13	0.00712927756654	0.00617870722433	0.866666666667	1
+
+01-H. not owned,02-Det. house,03-Vechicl.=3,06-Husb.:no college	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	3
+01-H. not owned,02-Det. house,03-Vechicl.=1,06-Husb.:no college	YES	20	15	0.00950570342205	0.00712927756654	0.75	3
+01-H. owned,02-Att. house,03-Vechicl.=2,06-Husb.:no college	NO	17	12	0.00807984790875	0.00570342205323	0.705882352941	1,2
+
+02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	YES	20	15	0.00950570342205	0.00712927756654	0.75	2,3
+02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	NO	41	31	0.0194866920152	0.0147338403042	0.756097560976	1
+02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker	NO	154	118	0.0731939163498	0.0560836501901	0.766233766234	1
+
+02-Det. house,03-Vechicl.=3,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	15	12	0.00712927756654	0.00570342205323	0.8	3
+02-Apart.,03-Vechicl.=2,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	33	25	0.0156844106464	0.0118821292776	0.757575757576	3
+02-Apart.,03-Vechicl.=1,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	1,2
+
+02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	YES	24	19	0.0114068441065	0.00903041825095	0.791666666667	2,3
+02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	48	37	0.0228136882129	0.0175855513308	0.770833333333	1
+02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	185	143	0.087927756654	0.0679657794677	0.772972972973	1
+
+02-Det. house,03-Vechicl.=1,06-Husb.:school,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	YES	13	10	0.00617870722433	0.00475285171103	0.769230769231	2
+02-Apart.,03-Vechicl.=1,06-Husb.:school,08-Husb.:West Europe,11-Wife.work.class=PrivateWorker	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	1
+
+02-Det. house,03-Vechicl.=3,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	46	36	0.0218631178707	0.0171102661597	0.782608695652	2
+02-Det. house,03-Vechicl.=1,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	YES	22	16	0.0104562737643	0.00760456273764	0.727272727273	1,3
+02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker	NO	197	155	0.0936311787072	0.0736692015209	0.786802030457	2
+
+02-Det. house,03-Vechicl.=1,09-Wife:Other American	YES	14	11	0.00665399239544	0.00522813688213	0.785714285714	2
+02-Att. house,03-Vechicl.=2,09-Wife:Other American	NO	12	11	0.00570342205323	0.00522813688213	0.916666666667	1
+
+02-Det. house,03-Vechicl.=3,08-Husb.:West Europe	NO	56	45	0.0266159695817	0.0213878326996	0.803571428571	2
+02-Det. house,03-Vechicl.=1,08-Husb.:West Europe	YES	30	23	0.0142585551331	0.0109315589354	0.766666666667	1,3,4
+02-Apart.,03-Vechicl.=2,08-Husb.:West Europe	NO	242	191	0.115019011407	0.0907794676806	0.789256198347	2
+02-Apart.,03-Vechicl.=3,08-Husb.:West Europe	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	2
+
+02-Det. house,03-Vechicl.=3,07-Wife:no college,08-Husb.:West Europe	NO	19	15	0.00903041825095	0.00712927756654	0.789473684211	2
+02-Det. house,03-Vechicl.=1,07-Wife:no college,08-Husb.:West Europe	YES	13	11	0.00617870722433	0.00522813688213	0.846153846154	1
+
+01-H. owned,03-Vechicl.=3,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	11	10	0.00522813688213	0.00475285171103	0.909090909091	2
+01-H. not owned,03-Vechicl.=1,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	YES	18	14	0.00855513307985	0.00665399239544	0.777777777778	1
+
+01-H. not owned,03-Vechicl.=1,08-Husb.:Latino	YES	26	20	0.0123574144487	0.00950570342205	0.769230769231	2
+01-H. owned,03-Vechicl.=2,08-Husb.:Latino	NO	13	11	0.00617870722433	0.00522813688213	0.846153846154	1
+
+03-Vechicl.=3,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	NO	20	16	0.00950570342205	0.00760456273764	0.8	2
+03-Vechicl.=1,06-Husb.:no college,08-Husb.:West Europe,09-Wife:West Europe,11-Wife.work.class=PrivateWorker	YES	20	15	0.00950570342205	0.00712927756654	0.75	1
+
+01-H. owned,02-Det. house,07-Wife:college,09-Wife:West Europe,10-Husb.work.class=PrivateWorker	NO	16	13	0.00760456273764	0.00617870722433	0.8125	2
+01-H. not owned,02-Det. house,07-Wife:college,09-Wife:West Europe,10-Husb.work.class=PrivateWorker	YES	18	13	0.00855513307985	0.00617870722433	0.722222222222	1,3
+01-H. not owned,02-Apart.,07-Wife:college,09-Wife:West Europe,10-Husb.work.class=PrivateWorker	NO	23	17	0.0109315589354	0.00807984790875	0.739130434783	2
+
+01-H. owned,02-Apart.,09-Wife:Mexico	NO	15	11	0.00712927756654	0.00522813688213	0.733333333333	2
+01-H. owned,02-No stat. home,09-Wife:Mexico	YES	17	12	0.00807984790875	0.00570342205323	0.705882352941	1
+
+01-H. owned,02-Det. house,08-Husb.:West Europe,09-Wife:Other American	NO	14	10	0.00665399239544	0.00475285171103	0.714285714286	2
+01-H. not owned,02-Det. house,08-Husb.:West Europe,09-Wife:Other American	YES	15	11	0.00712927756654	0.00522813688213	0.733333333333	1,3
+01-H. not owned,02-Apart.,08-Husb.:West Europe,09-Wife:Other American	NO	21	15	0.00998098859316	0.00712927756654	0.714285714286	2
+
+01-H. not owned,02-Apart.,07-Wife:college,08-Husb.:West Europe,09-Wife:West Europe	NO	24	18	0.0114068441065	0.00855513307985	0.75	3
+01-H. owned,02-Det. house,07-Wife:college,08-Husb.:West Europe,09-Wife:West Europe	NO	23	19	0.0109315589354	0.00903041825095	0.826086956522	3
+01-H. not owned,02-Det. house,07-Wife:college,08-Husb.:West Europe,09-Wife:West Europe	YES	14	10	0.00665399239544	0.00475285171103	0.714285714286	1,2
+

@@ -1,0 +1,1 @@
+LHS	RHS	LHS_supp_count	RULE_supp_count	LHS_supp	RULE_supp	RULE_conf	links
