@@ -1,6 +1,8 @@
 
 LHS = 'LHS'
+LHS_SET = 'LHS_set'
 RHS = 'RHS'
+RHS_SET = 'RHS_set'
 LHS_SUPP_COUNT = 'LHS_supp_count'
 LHS_SUPP = 'LHS_supp'
 RULE_SUPP_COUNT = 'RULE_supp_count'

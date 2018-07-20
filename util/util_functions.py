@@ -33,6 +33,19 @@ def patterns_to_string(patterns_list):
     return str_result
 
 
+def rules_to_string(rules_list):
+    str_result = '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(constants.LHS, constants.RHS,
+                                                           constants.LHS_SUPP_COUNT, constants.RULE_SUPP_COUNT,
+                                                           constants.LHS_SUPP, constants.RULE_SUPP, constants.RULE_CONF,
+                                                           constants.LINKS)
+    for rule in rules_list:
+        str_result += '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(
+            rule[constants.LHS], rule[constants.RHS],
+            rule[constants.LHS_SUPP_COUNT], rule[constants.RULE_SUPP_COUNT],
+            rule[constants.LHS_SUPP], rule[constants.RULE_SUPP], rule[constants.RULE_CONF], rule[constants.LINKS])
+    str_result += '\n'
+    return str_result
+
 #######################
 # analysis of possible attribute values
 #######################
@@ -101,14 +114,15 @@ def get_support_count():
     file_with_transactions = '../data/toMine_1_1.txt'
     itemsets_to_find_str = ['03-Vechicl.=2,12-Husb.Income=05',
                             '03-Vechicl.=2,12-Husb.Income=05,NO',
-                            '02-Apart.,03-Vechicl.=2,08-Husb.:West Europe,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,NO',
-                            '02-Apart.',
+                            'NO',
+                            '01-H. not owned,11-Wife.work.class=GovernmWorker,NO',
+                            '01-H. not owned,11-Wife.work.class=GovernmWorker',
                             ]
     itemsets_to_find_arr = {}
     for key in itemsets_to_find_str:
         itemsets_to_find_arr[key] = key.split(',')
 
-    transactions = un_zip_transactions_2(file_with_transactions)
+    transactions = unzip_transactions_2(file_with_transactions)
     tot_support_num = find_itemsets_in_transactions(transactions, itemsets_to_find_arr)
     for el in tot_support_num:
         print('{} : {}'.format(el, tot_support_num[el]))
@@ -118,5 +132,5 @@ def get_support_count():
 # entry point
 #######################
 if __name__ == '__main__':
-    # get_support_count()
-    get_all_possible_values_of_attributes("../data/toMine_1_1.txt")
+    get_support_count()
+    #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")
