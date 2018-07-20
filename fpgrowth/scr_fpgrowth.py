@@ -249,9 +249,9 @@ class FPTree(object):
                 subtree.init_scr_rules()
                 # subtree.get_scr_patterns(support_threshold, confidence_threshold)
                 if is_verbose:
-                    print str(i) + " done"
-                    print "-------------------------------"
-                    print subtree.to_string(False, is_add_children=False)
+                    print(str(i) + " done")
+                    print("-------------------------------")
+                    print(subtree.to_string(False, is_add_children=False))
 
                 patterns = subtree.get_scr_patterns_v2(support_threshold, confidence_threshold, tot_records_num)
                 if len(patterns) > 0:
@@ -259,14 +259,14 @@ class FPTree(object):
                 #for pattern in patterns:
                 #    list_of_patterns.append(pattern)
                 if is_verbose:
-                    print "SCR-patterns"
-                    print self.scr_patterns_to_string(patterns)
+                    print("SCR-patterns")
+                    print(self.scr_patterns_to_string(patterns))
 
                 pruned_num, left_classes = subtree.prune_tree(support_threshold, original_transactions_info, is_verbose)
                 if is_verbose:
                     if pruned_num > 0:
                         print('--Pruned tree--')
-                        print subtree.to_string(False)
+                        print(subtree.to_string(False))
                 # now print the formed patterns
                 # patterns is an array of arrays, each sub-array consists of scr_ruleitems forming scr_pattern
                 if len(subtree.scr_ruleitems_info[VAR]) == 1 and '01' in subtree.scr_ruleitems_info[VAR]\
@@ -278,7 +278,7 @@ class FPTree(object):
             else:
                 # only invariant attributes left, no need to build new trees
                 if is_verbose:
-                    print "====================== Finished iteration ======================="
+                    print("====================== Finished iteration =======================")
                 break
         return list_of_patterns
 
@@ -413,7 +413,7 @@ class FPTree(object):
         for key in self.scr_ruleitems:
             scr_ruleitem = self.scr_ruleitems[key]
             # set as chosen class the class with max elements
-            chosen_class = max(scr_ruleitem.class_object.iteritems(),
+            chosen_class = max(scr_ruleitem.class_object.items(),
                                             key=operator.itemgetter(1))[0]
             scr_ruleitem.chosen_class = chosen_class
             chosen_supp = scr_ruleitem.class_object[chosen_class]
@@ -977,7 +977,7 @@ def find_frequent_patterns(transactions, transactions_info, support_threshold, c
     """
     tree = FPTree(transactions, transactions_info)
     if is_verbose:
-        print 'Original FP_tree\n' + tree.to_string(False)
+        print('Original FP_tree\n' + tree.to_string(False))
     #print tree.to_string()
     return tree.mine_patterns(support_threshold, confidence_threshold, transactions_info, len(transactions), is_verbose)
 

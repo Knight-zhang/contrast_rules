@@ -86,8 +86,8 @@ def run_census(file_name, support_number_threshold, confidence_threshold, output
     str_res = util_functions.patterns_to_string(patterns)
     if output_file_name is None:
         # print the results
-        print '\nPatterns'
-        print str_res
+        print('\nPatterns')
+        print(str_res)
     else:
         # print results into a file
         print('Saving results to {}   ...'.format(output_file_name))

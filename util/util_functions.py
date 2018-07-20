@@ -66,7 +66,7 @@ def analyze_transactions_info(transactions_info):
 
     # now print the values
     for el in attribute_values:
-        print el
+        print(el)
 
 
 def get_all_possible_values_of_attributes(file_name):
