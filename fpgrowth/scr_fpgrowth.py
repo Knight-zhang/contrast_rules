@@ -551,8 +551,19 @@ class FPTree(object):
                                 # ok, scr_ruleitem_1 and scr_ruleitem_2 form a pair
                                 if key_1 not in rule_object:
                                     # form rule and put it into rule_object
+                                    # sort key_1 according to value; class has only one value, no need to sort
+                                    temp = key_1.split(',')
+                                    temp.sort()
+                                    key_1_sorted = ''
+                                    for el in temp:
+                                        key_1_sorted += el + ','
+                                    key_1_sorted = key_1_sorted[:-1]
+                                    # and also create set representations
+                                    LHS_set = set(temp)
+                                    RHS_set = set([chosen_class_1])
                                     rule_1 = {
-                                        constants.LHS: key_1, constants.RHS: chosen_class_1,
+                                        constants.LHS: key_1_sorted, constants.RHS: chosen_class_1,
+                                        constants.LHS_SET: LHS_set, constants.RHS_SET: RHS_set,
                                         constants.LHS_SUPP_COUNT: scr_ruleitem_1.tot_supp,
                                         constants.LHS_SUPP: (float(scr_ruleitem_1.tot_supp) / tot_records_num),
                                         constants.RULE_SUPP_COUNT: supp_1,
@@ -561,8 +572,19 @@ class FPTree(object):
                                     }
                                     rule_object[key_1] = rule_1
                                 if key_2 not in rule_object:
+                                    # sort key_2 according to value; class has only one value, no need to sort
+                                    temp = key_2.split(',')
+                                    temp.sort()
+                                    key_2_sorted = ''
+                                    for el in temp:
+                                        key_2_sorted += el + ','
+                                    key_2_sorted = key_2_sorted[:-1]
+                                    # and also create set representations
+                                    LHS_set = set(temp)
+                                    RHS_set = set([chosen_class_2])
                                     rule_2 = {
-                                        constants.LHS: key_2, constants.RHS: chosen_class_2,
+                                        constants.LHS: key_2_sorted, constants.RHS: chosen_class_2,
+                                        constants.LHS_SET: LHS_set, constants.RHS_SET: RHS_set,
                                         constants.LHS_SUPP_COUNT: scr_ruleitem_2.tot_supp,
                                         constants.LHS_SUPP: (float(scr_ruleitem_2.tot_supp) / tot_records_num),
                                         constants.RULE_SUPP_COUNT: supp_2,

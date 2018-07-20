@@ -90,11 +90,18 @@ def run_census(file_name, support_number_threshold, confidence_threshold, output
         print str_res
     else:
         # print results into a file
-        print('Saving results into a file...')
+        print('Saving results to {}   ...'.format(output_file_name))
         with open(output_file_name, 'w') as output_file:
             output_file.write(str_res)
 
 
 if __name__ == '__main__':
-    run_census('../data/toMine_1_1.txt', 100, 0.5,
-               '../results/scr_fpgrowth/toMine_1_1_supp_100_conf_05.txt')
+    path = '../data/'
+    transactions_file_name = 'toMine_1_1.txt'
+    min_supp_count = 10
+    min_conf = 0.7
+    output_file_name = '../results/scr_fpgrowth/{}_supp_{}_conf_{}.txt'. \
+        format(transactions_file_name[:transactions_file_name.find('.txt')], min_supp_count,
+               str(min_conf).replace('.', ''))
+    run_census(path + transactions_file_name, min_supp_count, min_conf,
+               output_file_name)

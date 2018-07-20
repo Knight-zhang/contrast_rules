@@ -1,4 +1,8 @@
 import itertools
+import sys
+
+sys.path.insert(0, '../util')
+import constants
 
 
 class FPNode(object):
@@ -253,26 +257,44 @@ def find_frequent_patterns(transactions, support_threshold):
     return tree.mine_patterns(support_threshold)
 
 
-def generate_association_rules(patterns, confidence_threshold):
+def generate_association_rules(patterns, confidence_threshold, num_of_transactions):
     """
     Given a set of frequent itemsets, return a dict
     of association rules in the form
     {(left): ((right), confidence)}
     """
-    rules = {}
+    rules = []
     for itemset in patterns.keys():
         upper_support = patterns[itemset]
 
         for i in range(1, len(itemset)):
             for antecedent in itertools.combinations(itemset, i):
                 antecedent = tuple(sorted(antecedent))
-                consequent = tuple(sorted(set(itemset) - set(antecedent)))
+                # transform antecedent and consequent into sets
+                antecedent_set = set(antecedent)
+                consequent = tuple(sorted(set(itemset) - antecedent_set))
+                consequent_set = set(consequent)
 
                 if antecedent in patterns:
                     lower_support = patterns[antecedent]
                     confidence = float(upper_support) / lower_support
 
                     if confidence >= confidence_threshold:
-                        rules[antecedent] = (consequent, confidence)
+                        # form antecedent and censequent in string format (the tuples are already sorted)
+                        consequent_str = ''
+                        for el in consequent:
+                            consequent_str += el + ','
+                        consequent_str = consequent_str[:-1]
+                        antecedent_str = ''
+                        for el in antecedent:
+                            antecedent_str += el + ','
+                        antecedent_str = antecedent_str[:-1]
+                        a_rule = {constants.LHS: antecedent_str, constants.RHS: consequent_str,
+                                  constants.LHS_SET: antecedent_set, constants.RHS_SET: consequent_set,
+                                  constants.LHS_SUPP_COUNT: lower_support, constants.RULE_SUPP_COUNT: upper_support,
+                                  constants.LHS_SUPP: (float(lower_support) / num_of_transactions),
+                                  constants.RULE_SUPP: (float(upper_support) / num_of_transactions),
+                                  constants.RULE_CONF: confidence, constants.LINKS: ''}
+                        rules.append(a_rule)
 
     return rules
