@@ -1,4 +1,6 @@
 import constants
+import sys
+
 
 #######################
 # reading transactions
@@ -45,6 +47,7 @@ def rules_to_string(rules_list):
             rule[constants.LHS_SUPP], rule[constants.RULE_SUPP], rule[constants.RULE_CONF], rule[constants.LINKS])
     str_result += '\n'
     return str_result
+
 
 #######################
 # analysis of possible attribute values
@@ -112,8 +115,8 @@ def get_support_count():
     :return:
     """
     file_with_transactions = '../data/toMine_1_1.txt'
-    itemsets_to_find_str = ['03-Vechicl.=2,12-Husb.Income=05',
-                            '03-Vechicl.=2,12-Husb.Income=05,NO',
+    itemsets_to_find_str = ['02-Apart.',
+                            '02-Apart.,01-H. not owned',
                             'NO',
                             '01-H. not owned,11-Wife.work.class=GovernmWorker,NO',
                             '01-H. not owned,11-Wife.work.class=GovernmWorker',
@@ -128,9 +131,49 @@ def get_support_count():
         print('{} : {}'.format(el, tot_support_num[el]))
 
 
+def compare_outputs(first_file, second_file):
+    """
+    Compares the rules from two different files
+
+    :return: a tuple of similiraties and dissimilarities
+    """
+    similar = -2
+    different = 0
+    with open(second_file) as open_second_file:
+        for line2 in open_second_file:
+            with open(first_file) as open_first_file:
+                for line1 in open_first_file:
+                    if line1 == line2:
+                        similar += 1
+                        break
+                if line1 != line2:
+                    different += 1
+    print('There are {} similar rules and {} different rules.'.format(similar, different))
+
+
+def get_different_rules(first_file, second_file):
+    """
+    Get the rules that exist in the second file but do not exist
+    in the first file
+
+    """
+    with open(second_file) as open_second_file:
+        for line2 in open_second_file:
+            with open(first_file) as openfileobject:
+                for line1 in openfileobject:
+                    if line1 == line2:
+                        break
+                if line1 != line2:
+                    print(line2)
+
+
 #######################
 # entry point
 #######################
 if __name__ == '__main__':
-    get_support_count()
+    #compare_outputs('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
+    #                '../results/fpgrowth/toMine_1_1_supp_200_conf_07.txt')
+    get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
+                        '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
+    #get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")

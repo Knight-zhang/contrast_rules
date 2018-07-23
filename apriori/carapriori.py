@@ -11,7 +11,8 @@ from collections import namedtuple
 from itertools import combinations
 from itertools import chain
 from itertools import product
-
+sys.path.insert(0, '../util')
+import constants
 
 ################################################################################
 # Data structures.
@@ -84,7 +85,7 @@ class TransactionManager(object):
                 sum_indexes = sum_indexes.intersection(indexes)
 
         # Calculate and return the support.
-        return float(len(sum_indexes)) / self.__num_transaction
+        return len(sum_indexes)
 
     def initial_candidates(self):
         """
@@ -137,7 +138,7 @@ SupportRecord = namedtuple( # pylint: disable=C0103
 RelationRecord = namedtuple( # pylint: disable=C0103
     'RelationRecord', SupportRecord._fields + ('ordered_statistics',))
 OrderedStatistic = namedtuple( # pylint: disable=C0103
-    'OrderedStatistic', ('items_base', 'items_add', 'confidence', 'lift',))
+    'OrderedStatistic', ('items_base', 'items_add', 'antecedent_support', 'rule_support', 'confidence',))
 
 
 ################################################################################
@@ -228,11 +229,10 @@ def gen_ordered_statistics(transaction_manager, record):
     combination_set = sorted(set(items) - transaction_manager.classifier.intersection(set(items)))
     items_base = frozenset(combination_set)
     items_add = frozenset(transaction_manager.classifier.intersection(set(items)))
-    confidence = (
-        record.support / transaction_manager.calc_support(items_base))
-    lift = confidence / transaction_manager.calc_support(items_add)
+    antecedent_support = transaction_manager.calc_support(items_base)
+    confidence = record.support / antecedent_support
     yield OrderedStatistic(
-        frozenset(items_base), frozenset(items_add), confidence, lift)
+        frozenset(items_base), frozenset(items_add), antecedent_support, record.support, confidence)
 
 
 def filter_ordered_statistics(ordered_statistics, **kwargs):
@@ -251,8 +251,6 @@ def filter_ordered_statistics(ordered_statistics, **kwargs):
 
     for ordered_statistic in ordered_statistics:
         if ordered_statistic.confidence < min_confidence:
-            continue
-        if ordered_statistic.lift < min_lift:
             continue
         yield ordered_statistic
 
@@ -276,7 +274,6 @@ def CAR_apriori(transactions, classifier, **kwargs):
         max_length -- The maximum length of the relation (integer).
     """
     # Parse the arguments.
-
     min_support = kwargs.get('min_support', 0.1)
     min_confidence = kwargs.get('min_confidence', 0.0)
     min_lift = kwargs.get('min_lift', 0.0)
@@ -300,6 +297,7 @@ def CAR_apriori(transactions, classifier, **kwargs):
         transaction_manager, classifier, min_support, max_length=max_length)
 
     # Calculate ordered stats.
+    rules = []
     for support_record in support_records:
         ordered_statistics = list(
             _filter_ordered_statistics(
@@ -310,8 +308,30 @@ def CAR_apriori(transactions, classifier, **kwargs):
         )
         if not ordered_statistics:
             continue
-        yield RelationRecord(
-            support_record.items, support_record.support, ordered_statistics)
+        for ordered_statistic in ordered_statistics:
+            antecedent = tuple(sorted(ordered_statistic.items_base))
+            # transform antecedent and consequent into sets
+            antecedent_set = set(antecedent)
+            consequent = tuple(ordered_statistic.items_add)
+            consequent_set = set(consequent)
+            consequent_str = ''
+            for el in consequent:
+                consequent_str += el + ','
+            consequent_str = consequent_str[:-1]
+            antecedent_str = ''
+            for el in antecedent:
+                antecedent_str += el + ','
+            antecedent_str = antecedent_str[:-1]
+            a_rule = {constants.LHS: antecedent_str, constants.RHS: consequent_str,
+                      constants.LHS_SET: antecedent_set, constants.RHS_SET: consequent_set,
+                      constants.LHS_SUPP_COUNT: ordered_statistic.antecedent_support,
+                      constants.RULE_SUPP_COUNT: ordered_statistic.rule_support,
+                      constants.LHS_SUPP: float(ordered_statistic.antecedent_support)
+                                          / transaction_manager.num_transaction,
+                      constants.RULE_SUPP: float(ordered_statistic.rule_support) / transaction_manager.num_transaction,
+                      constants.RULE_CONF: ordered_statistic.confidence, constants.LINKS: ''}
+            rules.append(a_rule)
+    return rules
 
 
 def load_base(location, delimiter):
