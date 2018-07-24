@@ -202,11 +202,11 @@ def compare_with_statistica(file, statistica_file):
 # entry point
 #######################
 if __name__ == '__main__':
-    #compare_outputs('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
-    #                '../results/fpgrowth/toMine_1_1_supp_200_conf_07.txt')
+    compare_outputs('../results/apriori/toMine_3_3_supp_100_conf_06.txt',
+                    '../results/fpgrowth/toMine_3_3_supp_100_conf_06.txt')
     #get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
     #                    '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
-    different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
-                                              '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
+    #different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
+    #                                          '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
     #get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")

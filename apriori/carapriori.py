@@ -14,6 +14,7 @@ from itertools import product
 sys.path.insert(0, '../util')
 import constants
 
+
 ################################################################################
 # Data structures.
 ################################################################################
@@ -247,7 +248,6 @@ def filter_ordered_statistics(ordered_statistics, **kwargs):
         min_lift -- The minimum lift of relations (float).
     """
     min_confidence = kwargs.get('min_confidence', 0.0)
-    min_lift = kwargs.get('min_lift', 0.0)
 
     for ordered_statistic in ordered_statistics:
         if ordered_statistic.confidence < min_confidence:

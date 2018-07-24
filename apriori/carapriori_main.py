@@ -27,7 +27,7 @@ def run(transactions_file_name, min_supp_count, min_conf, output_file_name=None)
 
 if __name__ == '__main__':
     path_name = '../data/'
-    transactions_file_name = 'toMine_1_1.txt'
+    transactions_file_name = 'toMine_5_5.txt'
     min_supp_count = 200
     min_conf = 0.7
     output_file_name = '../results/car_apriori/{}_supp_{}_conf_{}.txt'.\

@@ -12,6 +12,7 @@ from itertools import chain
 sys.path.insert(0, '../util')
 import constants
 
+
 ################################################################################
 # Data structures.
 ################################################################################
@@ -239,10 +240,18 @@ def filter_ordered_statistics(ordered_statistics, **kwargs):
         yield ordered_statistic
 
 
+def get_classifications(filtered_ordered_statistics, classifier):
+
+    for filtered_ordered_statistic in filtered_ordered_statistics:
+        if filtered_ordered_statistic.items_add not in classifier:
+            continue
+        yield filtered_ordered_statistic
+
+
 ################################################################################
 # API function.
 ################################################################################
-def apriori(transactions, min_support, **kwargs):
+def generate_association_rules(transactions, min_support, **kwargs):
     """
     Executes Apriori algorithm and returns a RelationRecord generator.
 
@@ -259,8 +268,6 @@ def apriori(transactions, min_support, **kwargs):
     # Parse the arguments.
 
     min_confidence = kwargs.get('min_confidence', 0.5)
-    min_lift = kwargs.get('min_lift', 0.0)
-    max_length = kwargs.get('max_length', None)
 
     # Check arguments.
     if min_support <= 0:
@@ -277,7 +284,7 @@ def apriori(transactions, min_support, **kwargs):
     # Calculate supports.
     transaction_manager = TransactionManager.create(transactions)
     support_records = _gen_support_records(
-        transaction_manager, min_support, max_length=max_length)
+        transaction_manager, min_support)
 
     # Calculate ordered stats.
     rules = []
@@ -286,7 +293,68 @@ def apriori(transactions, min_support, **kwargs):
             _filter_ordered_statistics(
                 _gen_ordered_statistics(transaction_manager, support_record),
                 min_confidence=min_confidence,
-                min_lift=min_lift,
+            )
+        )
+        if not ordered_statistics:
+            continue
+        for ordered_statistic in ordered_statistics:
+            antecedent = tuple(sorted(ordered_statistic.items_base))
+            # transform antecedent and consequent into sets
+            antecedent_set = set(antecedent)
+            consequent = tuple(ordered_statistic.items_add)
+            consequent_set = set(consequent)
+            consequent_str = ''
+            for el in consequent:
+                consequent_str += el + ','
+            consequent_str = consequent_str[:-1]
+            antecedent_str = ''
+            for el in antecedent:
+                antecedent_str += el + ','
+            antecedent_str = antecedent_str[:-1]
+            a_rule = {constants.LHS: antecedent_str, constants.RHS: consequent_str,
+                      constants.LHS_SET: antecedent_set, constants.RHS_SET: consequent_set,
+                      constants.LHS_SUPP_COUNT: ordered_statistic.antecedent_support,
+                      constants.RULE_SUPP_COUNT: ordered_statistic.rule_support,
+                      constants.LHS_SUPP: float(ordered_statistic.antecedent_support)
+                                          / transaction_manager.num_transaction,
+                      constants.RULE_SUPP: float(ordered_statistic.rule_support) / transaction_manager.num_transaction,
+                      constants.RULE_CONF: ordered_statistic.confidence, constants.LINKS: ''}
+            rules.append(a_rule)
+    return rules
+
+
+def generate_classification_rules(transactions, classifier, min_support, **kwargs):
+    min_confidence = kwargs.get('min_confidence', 0.5)
+
+    # Check arguments.
+    if min_support <= 0:
+        raise ValueError('minimum support must be > 0')
+
+    # For testing.
+    _gen_support_records = kwargs.get(
+        '_gen_support_records', gen_support_records)
+    _gen_ordered_statistics = kwargs.get(
+        '_gen_ordered_statistics', gen_ordered_statistics)
+    _filter_ordered_statistics = kwargs.get(
+        '_filter_ordered_statistics', filter_ordered_statistics)
+    _get_classifications = kwargs.get(
+        '_get_classifications', get_classifications)
+
+    # Calculate supports.
+    transaction_manager = TransactionManager.create(transactions)
+    support_records = _gen_support_records(
+        transaction_manager, min_support)
+
+    # Calculate ordered stats.
+    rules = []
+    for support_record in support_records:
+        ordered_statistics = list(
+            _get_classifications(
+                _filter_ordered_statistics(
+                    _gen_ordered_statistics(transaction_manager, support_record),
+                    min_confidence=min_confidence,
+                ),
+                classifier
             )
         )
         if not ordered_statistics:
