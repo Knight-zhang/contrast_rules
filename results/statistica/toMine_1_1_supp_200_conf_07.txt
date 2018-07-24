@@ -1,0 +1,844 @@
+LSH	RHS	supp	conf	
+01-H. not owned	10-Husb.work.class=PrivateWorker	58,22243	78,47534	
+01-H. not owned	11-Wife.work.class=PrivateWorker	53,46958	72,06919	
+02-Apart.	01-H. not owned	49,38213	94,71285	
+02-Apart.	10-Husb.work.class=PrivateWorker	41,73004	80,03646	
+02-Apart.	11-Wife.work.class=PrivateWorker	37,11977	71,19417	
+03-Vechicl.=2	10-Husb.work.class=PrivateWorker	41,92015	77,30061	
+03-Vechicl.=2	11-Wife.work.class=PrivateWorker	41,53992	76,59947	
+06-Husb.:school	01-H. not owned	16,15970	76,23318	
+06-Husb.:school	10-Husb.work.class=PrivateWorker	16,96768	80,04484	
+06-Husb.:school	11-Wife.work.class=PrivateWorker	16,06464	75,78475	
+07-Wife:school	01-H. not owned	13,49810	72,63427	
+07-Wife:school	10-Husb.work.class=PrivateWorker	15,44677	83,12020	
+07-Wife:school	11-Wife.work.class=PrivateWorker	14,25856	76,72634	
+08-Husb.:West Europe	09-Wife:West Europe	25,95057	70,27027	
+08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	28,04183	75,93308	
+08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	29,18251	79,02188	
+09-Wife:West Europe	01-H. not owned	25,09506	71,44790	
+09-Wife:West Europe	08-Husb.:West Europe	25,95057	73,88363	
+09-Wife:West Europe	10-Husb.work.class=PrivateWorker	26,52091	75,50744	
+09-Wife:West Europe	11-Wife.work.class=PrivateWorker	27,80418	79,16103	
+10-Husb.work.class=PrivateWorker	01-H. not owned	58,22243	74,33252	
+10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	59,36312	75,78883	
+12-Husb.Income=05	10-Husb.work.class=PrivateWorker	13,87833	82,25352	
+12-Husb.Income=05	11-Wife.work.class=PrivateWorker	13,11787	77,74648	
+YES	01-H. not owned	32,12928	75,78475	
+YES	10-Husb.work.class=PrivateWorker	33,50760	79,03587	
+YES	11-Wife.work.class=PrivateWorker	30,32319	71,52466	
+02-Det. house	10-Husb.work.class=PrivateWorker	26,47338	76,72176	
+02-Det. house	11-Wife.work.class=PrivateWorker	25,85551	74,93113	
+06-Husb.:no college	10-Husb.work.class=PrivateWorker	21,38783	74,25743	
+06-Husb.:no college	11-Wife.work.class=PrivateWorker	21,81559	75,74257	
+07-Wife:no college	01-H. not owned	23,52662	73,00885	
+07-Wife:no college	10-Husb.work.class=PrivateWorker	24,23954	75,22124	
+07-Wife:no college	11-Wife.work.class=PrivateWorker	26,28327	81,56342	
+11-Wife.work.class=PrivateWorker	01-H. not owned	53,46958	73,38552	
+11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	59,36312	81,47423	
+12-Husb.Income=04	01-H. not owned	29,99049	71,46093	
+12-Husb.Income=04	10-Husb.work.class=PrivateWorker	32,22433	76,78369	
+12-Husb.Income=04	11-Wife.work.class=PrivateWorker	31,13118	74,17894	
+06-Husb.:associate	01-H. not owned	15,73194	74,04922	
+06-Husb.:associate	10-Husb.work.class=PrivateWorker	16,49240	77,62864	
+06-Husb.:associate	11-Wife.work.class=PrivateWorker	15,58935	73,37808	
+06-Husb.:associate	NO	16,49240	77,62864	
+10-Husb.work.class=GovernmWorker	01-H. not owned	11,26426	75,00000	
+09-Wife:Mexico	01-H. not owned	24,85741	76,91176	
+09-Wife:Mexico	10-Husb.work.class=PrivateWorker	27,04373	83,67647	
+09-Wife:Mexico	08-Husb.:Mexico	26,42586	81,76471	
+08-Husb.:Mexico	01-H. not owned	24,57224	76,70623	
+08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	26,66350	83,23442	
+08-Husb.:Mexico	09-Wife:Mexico	26,42586	82,49258	
+11-Wife.work.class=NoWork	01-H. not owned	9,69582	86,44068	
+03-Vechicl.=1	01-H. not owned	25,09506	88,73950	
+03-Vechicl.=1	10-Husb.work.class=PrivateWorker	22,19582	78,48739	
+12-Husb.Income=03	01-H. not owned	19,43916	87,58030	
+12-Husb.Income=03	10-Husb.work.class=PrivateWorker	17,39544	78,37259	
+12-Husb.Income=03	11-Wife.work.class=PrivateWorker	15,63688	70,44968	
+06-Husb.:no school	01-H. not owned	14,49620	84,02204	
+06-Husb.:no school	10-Husb.work.class=PrivateWorker	15,35171	88,98072	
+06-Husb.:no school	09-Wife:Mexico	13,30798	77,13499	
+06-Husb.:no school	08-Husb.:Mexico	13,68821	79,33884	
+07-Wife:no school	01-H. not owned	11,50190	87,36462	
+07-Wife:no school	10-Husb.work.class=PrivateWorker	11,21673	85,19856	
+07-Wife:no school	09-Wife:Mexico	10,12357	76,89531	
+07-Wife:no school	08-Husb.:Mexico	9,88593	75,09025	
+01-H. owned	10-Husb.work.class=PrivateWorker	20,10456	77,90055	
+01-H. owned	02-Det. house	18,44106	71,45488	
+01-H. owned	11-Wife.work.class=PrivateWorker	19,39163	75,13812	
+07-Wife:associate	01-H. not owned	17,58555	72,97830	
+07-Wife:associate	10-Husb.work.class=PrivateWorker	19,01141	78,89546	
+07-Wife:associate	NO	20,00951	83,03748	
+NO	01-H. not owned	42,06274	73,01980	
+NO	10-Husb.work.class=PrivateWorker	44,81939	77,80528	
+NO	11-Wife.work.class=PrivateWorker	42,53802	73,84488	
+01-H. not owned, 02-Apart.	10-Husb.work.class=PrivateWorker	39,44867	79,88450	
+01-H. not owned, 02-Apart.	11-Wife.work.class=PrivateWorker	35,17110	71,22233	
+01-H. not owned, 03-Vechicl.=2	10-Husb.work.class=PrivateWorker	29,42015	77,56892	
+01-H. not owned, 03-Vechicl.=2	11-Wife.work.class=PrivateWorker	29,65779	78,19549	
+01-H. not owned, 06-Husb.:school	10-Husb.work.class=PrivateWorker	12,69011	78,52941	
+01-H. not owned, 06-Husb.:school	11-Wife.work.class=PrivateWorker	12,26236	75,88235	
+01-H. not owned, 07-Wife:school	10-Husb.work.class=PrivateWorker	10,88403	80,63380	
+01-H. not owned, 07-Wife:school	11-Wife.work.class=PrivateWorker	10,12357	75,00000	
+01-H. not owned, 08-Husb.:West Europe	09-Wife:West Europe	18,15589	70,47970	
+01-H. not owned, 08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	19,67681	76,38376	
+01-H. not owned, 08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	20,53232	79,70480	
+01-H. not owned, 09-Wife:West Europe	08-Husb.:West Europe	18,15589	72,34848	
+01-H. not owned, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	18,96388	75,56818	
+01-H. not owned, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	19,91445	79,35606	
+01-H. not owned, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	43,34601	74,44898	
+01-H. not owned, YES	10-Husb.work.class=PrivateWorker	25,57034	79,58580	
+01-H. not owned, 02-Det. house	10-Husb.work.class=PrivateWorker	12,54753	78,10651	
+01-H. not owned, 02-Det. house	11-Wife.work.class=PrivateWorker	12,26236	76,33136	
+01-H. not owned, 06-Husb.:no college	10-Husb.work.class=PrivateWorker	14,35361	73,47932	
+01-H. not owned, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	14,78137	75,66910	
+01-H. not owned, 07-Wife:no college	10-Husb.work.class=PrivateWorker	17,82319	75,75758	
+01-H. not owned, 07-Wife:no college	11-Wife.work.class=PrivateWorker	19,20152	81,61616	
+01-H. not owned, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	43,34601	81,06667	
+01-H. not owned, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	23,09886	77,02060	
+01-H. not owned, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	22,24335	74,16799	
+01-H. not owned, 06-Husb.:associate	02-Apart.	11,69202	74,32024	
+01-H. not owned, 06-Husb.:associate	10-Husb.work.class=PrivateWorker	12,45247	79,15408	
+01-H. not owned, 06-Husb.:associate	11-Wife.work.class=PrivateWorker	11,64449	74,01813	
+01-H. not owned, 06-Husb.:associate	NO	12,40494	78,85196	
+01-H. not owned, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	21,10266	84,89484	
+01-H. not owned, 09-Wife:Mexico	08-Husb.:Mexico	20,43726	82,21797	
+01-H. not owned, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	20,72243	84,33269	
+01-H. not owned, 08-Husb.:Mexico	09-Wife:Mexico	20,43726	83,17215	
+01-H. not owned, 03-Vechicl.=1	02-Apart.	18,25095	72,72727	
+01-H. not owned, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	19,53422	77,84091	
+01-H. not owned, 12-Husb.Income=03	10-Husb.work.class=PrivateWorker	15,30418	78,72861	
+01-H. not owned, 12-Husb.Income=03	11-Wife.work.class=PrivateWorker	14,06844	72,37164	
+01-H. not owned, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	12,83270	88,52459	
+01-H. not owned, 06-Husb.:no school	09-Wife:Mexico	11,50190	79,34426	
+01-H. not owned, 06-Husb.:no school	08-Husb.:Mexico	11,83460	81,63934	
+01-H. not owned, 07-Wife:no school	10-Husb.work.class=PrivateWorker	9,69582	84,29752	
+01-H. not owned, 07-Wife:associate	02-Apart.	13,49810	76,75676	
+01-H. not owned, 07-Wife:associate	10-Husb.work.class=PrivateWorker	13,97338	79,45946	
+01-H. not owned, 07-Wife:associate	NO	15,01901	85,40541	
+01-H. not owned, NO	02-Apart.	30,18061	71,75141	
+01-H. not owned, NO	10-Husb.work.class=PrivateWorker	32,65209	77,62712	
+01-H. not owned, NO	11-Wife.work.class=PrivateWorker	31,41635	74,68927	
+02-Apart., 03-Vechicl.=2	01-H. not owned	24,47719	92,29391	
+02-Apart., 03-Vechicl.=2	10-Husb.work.class=PrivateWorker	21,15019	79,74910	
+02-Apart., 03-Vechicl.=2	11-Wife.work.class=PrivateWorker	20,67490	77,95699	
+02-Apart., 06-Husb.:school	01-H. not owned	9,98099	97,22222	
+02-Apart., 08-Husb.:West Europe	01-H. not owned	15,77947	93,52113	
+02-Apart., 08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	13,35551	79,15493	
+02-Apart., 08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	13,26046	78,59155	
+02-Apart., 08-Husb.:West Europe	NO	12,69011	75,21127	
+02-Apart., 09-Wife:West Europe	01-H. not owned	15,06654	94,91018	
+02-Apart., 09-Wife:West Europe	08-Husb.:West Europe	11,35932	71,55689	
+02-Apart., 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	12,54753	79,04192	
+02-Apart., 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	12,64259	79,64072	
+02-Apart., 09-Wife:West Europe	NO	11,64449	73,35329	
+02-Apart., 10-Husb.work.class=PrivateWorker	01-H. not owned	39,44867	94,53303	
+02-Apart., 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	30,37072	72,77904	
+02-Apart., YES	01-H. not owned	19,20152	96,88249	
+02-Apart., YES	10-Husb.work.class=PrivateWorker	16,01711	80,81535	
+02-Apart., 06-Husb.:no college	01-H. not owned	12,30989	93,84058	
+02-Apart., 06-Husb.:no college	10-Husb.work.class=PrivateWorker	10,07605	76,81159	
+02-Apart., 06-Husb.:no college	11-Wife.work.class=PrivateWorker	10,17110	77,53623	
+02-Apart., 07-Wife:no college	01-H. not owned	14,87643	94,56193	
+02-Apart., 07-Wife:no college	10-Husb.work.class=PrivateWorker	12,35741	78,54985	
+02-Apart., 07-Wife:no college	11-Wife.work.class=PrivateWorker	13,07034	83,08157	
+02-Apart., 11-Wife.work.class=PrivateWorker	01-H. not owned	35,17110	94,75032	
+02-Apart., 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	30,37072	81,81818	
+02-Apart., 12-Husb.Income=04	01-H. not owned	19,39163	93,79310	
+02-Apart., 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	15,92205	77,01149	
+02-Apart., 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	15,49430	74,94253	
+02-Apart., 06-Husb.:associate	01-H. not owned	11,69202	92,83019	
+02-Apart., 06-Husb.:associate	10-Husb.work.class=PrivateWorker	10,17110	80,75472	
+02-Apart., 06-Husb.:associate	NO	10,36122	82,26415	
+02-Apart., 09-Wife:Mexico	01-H. not owned	16,63498	95,89041	
+02-Apart., 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	14,87643	85,75342	
+02-Apart., 09-Wife:Mexico	08-Husb.:Mexico	14,11597	81,36986	
+02-Apart., 08-Husb.:Mexico	01-H. not owned	16,63498	97,22222	
+02-Apart., 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	14,49620	84,72222	
+02-Apart., 08-Husb.:Mexico	09-Wife:Mexico	14,11597	82,50000	
+02-Apart., 03-Vechicl.=1	01-H. not owned	18,25095	97,70992	
+02-Apart., 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	15,01901	80,40712	
+02-Apart., 12-Husb.Income=03	01-H. not owned	12,54753	96,35036	
+02-Apart., 12-Husb.Income=03	10-Husb.work.class=PrivateWorker	10,69392	82,11679	
+02-Apart., 07-Wife:associate	01-H. not owned	13,49810	91,90939	
+02-Apart., 07-Wife:associate	10-Husb.work.class=PrivateWorker	11,73954	79,93528	
+02-Apart., 07-Wife:associate	NO	12,54753	85,43689	
+02-Apart., NO	01-H. not owned	30,18061	93,38235	
+02-Apart., NO	10-Husb.work.class=PrivateWorker	25,71293	79,55882	
+02-Apart., NO	11-Wife.work.class=PrivateWorker	23,66920	73,23529	
+03-Vechicl.=2, 08-Husb.:West Europe	09-Wife:West Europe	17,96578	71,72676	
+03-Vechicl.=2, 08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	18,96388	75,71157	
+03-Vechicl.=2, 08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	19,39163	77,41935	
+03-Vechicl.=2, 09-Wife:West Europe	01-H. not owned	16,77757	70,31873	
+03-Vechicl.=2, 09-Wife:West Europe	08-Husb.:West Europe	17,96578	75,29880	
+03-Vechicl.=2, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	18,20342	76,29482	
+03-Vechicl.=2, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	18,77376	78,68526	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	01-H. not owned	29,42015	70,18141	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	33,26996	79,36508	
+03-Vechicl.=2, YES	10-Husb.work.class=PrivateWorker	15,49430	78,36538	
+03-Vechicl.=2, YES	11-Wife.work.class=PrivateWorker	15,20913	76,92308	
+03-Vechicl.=2, 02-Det. house	10-Husb.work.class=PrivateWorker	15,16160	74,70726	
+03-Vechicl.=2, 02-Det. house	11-Wife.work.class=PrivateWorker	15,06654	74,23888	
+03-Vechicl.=2, 06-Husb.:no college	10-Husb.work.class=PrivateWorker	13,16540	75,68306	
+03-Vechicl.=2, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	13,49810	77,59563	
+03-Vechicl.=2, 07-Wife:no college	01-H. not owned	13,73574	71,53465	
+03-Vechicl.=2, 07-Wife:no college	10-Husb.work.class=PrivateWorker	14,63878	76,23762	
+03-Vechicl.=2, 07-Wife:no college	11-Wife.work.class=PrivateWorker	16,11217	83,91089	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	01-H. not owned	29,65779	71,39588	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	33,26996	80,09153	
+03-Vechicl.=2, 12-Husb.Income=04	01-H. not owned	17,82319	70,75472	
+03-Vechicl.=2, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	19,24905	76,41509	
+03-Vechicl.=2, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	19,39163	76,98113	
+03-Vechicl.=2, 06-Husb.:associate	10-Husb.work.class=PrivateWorker	10,55133	76,02740	
+03-Vechicl.=2, 06-Husb.:associate	11-Wife.work.class=PrivateWorker	10,64639	76,71233	
+03-Vechicl.=2, 06-Husb.:associate	NO	11,07414	79,79452	
+03-Vechicl.=2, 09-Wife:Mexico	01-H. not owned	10,07605	70,90301	
+03-Vechicl.=2, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	11,45437	80,60201	
+03-Vechicl.=2, 09-Wife:Mexico	11-Wife.work.class=PrivateWorker	10,12357	71,23746	
+03-Vechicl.=2, 09-Wife:Mexico	08-Husb.:Mexico	10,40875	73,24415	
+03-Vechicl.=2, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	11,07414	80,62284	
+03-Vechicl.=2, 08-Husb.:Mexico	11-Wife.work.class=PrivateWorker	9,79087	71,28028	
+03-Vechicl.=2, 08-Husb.:Mexico	09-Wife:Mexico	10,40875	75,77855	
+03-Vechicl.=2, 01-H. owned	10-Husb.work.class=PrivateWorker	12,50000	76,67638	
+03-Vechicl.=2, 01-H. owned	11-Wife.work.class=PrivateWorker	11,88213	72,88630	
+03-Vechicl.=2, 07-Wife:associate	10-Husb.work.class=PrivateWorker	12,40494	78,37838	
+03-Vechicl.=2, 07-Wife:associate	NO	13,45057	84,98498	
+03-Vechicl.=2, NO	01-H. not owned	24,14449	70,06897	
+03-Vechicl.=2, NO	10-Husb.work.class=PrivateWorker	26,42586	76,68966	
+03-Vechicl.=2, NO	11-Wife.work.class=PrivateWorker	26,33080	76,41379	
+06-Husb.:school, 10-Husb.work.class=PrivateWorker	01-H. not owned	12,69011	74,78992	
+06-Husb.:school, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	13,21293	77,87115	
+06-Husb.:school, 11-Wife.work.class=PrivateWorker	01-H. not owned	12,26236	76,33136	
+06-Husb.:school, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	13,21293	82,24852	
+07-Wife:school, 10-Husb.work.class=PrivateWorker	01-H. not owned	10,88403	70,46154	
+07-Wife:school, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	12,35741	80,00000	
+07-Wife:school, 11-Wife.work.class=PrivateWorker	01-H. not owned	10,12357	71,00000	
+07-Wife:school, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	12,35741	86,66667	
+08-Husb.:West Europe, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	19,43916	74,90842	
+08-Husb.:West Europe, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	20,43726	78,75458	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	19,67681	70,16949	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	23,33650	83,22034	
+08-Husb.:West Europe, YES	11-Wife.work.class=PrivateWorker	9,93346	81,32296	
+08-Husb.:West Europe, 02-Det. house	09-Wife:West Europe	10,69392	71,88498	
+08-Husb.:West Europe, 02-Det. house	10-Husb.work.class=PrivateWorker	10,93156	73,48243	
+08-Husb.:West Europe, 02-Det. house	11-Wife.work.class=PrivateWorker	11,64449	78,27476	
+08-Husb.:West Europe, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	9,50570	78,43137	
+08-Husb.:West Europe, 07-Wife:no college	01-H. not owned	9,55323	72,04301	
+08-Husb.:West Europe, 07-Wife:no college	10-Husb.work.class=PrivateWorker	9,74335	73,47670	
+08-Husb.:West Europe, 07-Wife:no college	11-Wife.work.class=PrivateWorker	11,31179	85,30466	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	01-H. not owned	20,53232	70,35831	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	09-Wife:West Europe	20,43726	70,03257	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	23,33650	79,96743	
+08-Husb.:West Europe, 12-Husb.Income=04	09-Wife:West Europe	11,78707	72,51462	
+08-Husb.:West Europe, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	11,97719	73,68421	
+08-Husb.:West Europe, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	12,45247	76,60819	
+08-Husb.:West Europe, 07-Wife:associate	10-Husb.work.class=PrivateWorker	9,60076	78,59922	
+08-Husb.:West Europe, 07-Wife:associate	NO	10,40875	85,21401	
+08-Husb.:West Europe, NO	03-Vechicl.=2	17,49049	70,76923	
+08-Husb.:West Europe, NO	09-Wife:West Europe	17,53802	70,96154	
+08-Husb.:West Europe, NO	10-Husb.work.class=PrivateWorker	19,15399	77,50000	
+08-Husb.:West Europe, NO	11-Wife.work.class=PrivateWorker	19,24905	77,88462	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	18,96388	71,50538	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	08-Husb.:West Europe	19,43916	73,29749	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	21,72053	81,89964	
+09-Wife:West Europe, YES	11-Wife.work.class=PrivateWorker	9,88593	82,86853	
+09-Wife:West Europe, 02-Det. house	08-Husb.:West Europe	10,69392	74,75083	
+09-Wife:West Europe, 02-Det. house	10-Husb.work.class=PrivateWorker	10,50380	73,42193	
+09-Wife:West Europe, 02-Det. house	11-Wife.work.class=PrivateWorker	11,26426	78,73754	
+09-Wife:West Europe, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	9,55323	78,51563	
+09-Wife:West Europe, 07-Wife:no college	01-H. not owned	9,83840	74,19355	
+09-Wife:West Europe, 07-Wife:no college	10-Husb.work.class=PrivateWorker	9,64829	72,75986	
+09-Wife:West Europe, 07-Wife:no college	11-Wife.work.class=PrivateWorker	11,40684	86,02151	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	01-H. not owned	19,91445	71,62393	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	20,43726	73,50427	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	21,72053	78,11966	
+09-Wife:West Europe, 12-Husb.Income=04	01-H. not owned	12,16730	74,20290	
+09-Wife:West Europe, 12-Husb.Income=04	03-Vechicl.=2	11,59696	70,72464	
+09-Wife:West Europe, 12-Husb.Income=04	08-Husb.:West Europe	11,78707	71,88406	
+09-Wife:West Europe, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	12,26236	74,78261	
+09-Wife:West Europe, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	12,78517	77,97101	
+09-Wife:West Europe, 07-Wife:associate	NO	9,93346	85,65574	
+09-Wife:West Europe, NO	01-H. not owned	16,34981	70,49180	
+09-Wife:West Europe, NO	03-Vechicl.=2	16,39734	70,69672	
+09-Wife:West Europe, NO	08-Husb.:West Europe	17,53802	75,61475	
+09-Wife:West Europe, NO	10-Husb.work.class=PrivateWorker	17,77567	76,63934	
+09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	17,91825	77,25410	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=05	11-Wife.work.class=PrivateWorker	10,97909	79,10959	
+10-Husb.work.class=PrivateWorker, YES	01-H. not owned	25,57034	76,31206	
+10-Husb.work.class=PrivateWorker, YES	11-Wife.work.class=PrivateWorker	24,95247	74,46809	
+10-Husb.work.class=PrivateWorker, 02-Det. house	11-Wife.work.class=PrivateWorker	21,10266	79,71275	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	17,15779	80,22222	
+10-Husb.work.class=PrivateWorker, 07-Wife:no college	01-H. not owned	17,82319	73,52941	
+10-Husb.work.class=PrivateWorker, 07-Wife:no college	11-Wife.work.class=PrivateWorker	20,67490	85,29412	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	43,34601	73,01841	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	23,09886	71,68142	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	24,80989	76,99115	
+10-Husb.work.class=PrivateWorker, 06-Husb.:associate	01-H. not owned	12,45247	75,50432	
+10-Husb.work.class=PrivateWorker, 06-Husb.:associate	11-Wife.work.class=PrivateWorker	12,69011	76,94524	
+10-Husb.work.class=PrivateWorker, 06-Husb.:associate	NO	13,11787	79,53890	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	21,10266	78,03163	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	11-Wife.work.class=PrivateWorker	19,24905	71,17750	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	22,24335	82,24956	
+10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	20,72243	77,71836	
+10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	11-Wife.work.class=PrivateWorker	18,91635	70,94474	
+10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	22,24335	83,42246	
+10-Husb.work.class=PrivateWorker, 03-Vechicl.=1	01-H. not owned	19,53422	88,00857	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=03	01-H. not owned	15,30418	87,97814	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=03	11-Wife.work.class=PrivateWorker	12,69011	72,95082	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no school	01-H. not owned	12,83270	83,59133	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no school	09-Wife:Mexico	11,88213	77,39938	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no school	08-Husb.:Mexico	12,11977	78,94737	
+10-Husb.work.class=PrivateWorker, 07-Wife:no school	01-H. not owned	9,69582	86,44068	
+10-Husb.work.class=PrivateWorker, 01-H. owned	11-Wife.work.class=PrivateWorker	16,01711	79,66903	
+10-Husb.work.class=PrivateWorker, 07-Wife:associate	01-H. not owned	13,97338	73,50000	
+10-Husb.work.class=PrivateWorker, 07-Wife:associate	NO	15,96958	84,00000	
+10-Husb.work.class=PrivateWorker, NO	01-H. not owned	32,65209	72,85260	
+10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	34,41065	76,77625	
+12-Husb.Income=05, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,97909	83,69565	
+YES, 02-Det. house	10-Husb.work.class=PrivateWorker	12,78517	78,42566	
+YES, 02-Det. house	11-Wife.work.class=PrivateWorker	12,40494	76,09329	
+YES, 07-Wife:no college	01-H. not owned	11,31179	73,68421	
+YES, 07-Wife:no college	10-Husb.work.class=PrivateWorker	11,50190	74,92260	
+YES, 07-Wife:no college	11-Wife.work.class=PrivateWorker	12,30989	80,18576	
+YES, 11-Wife.work.class=PrivateWorker	01-H. not owned	22,05323	72,72727	
+YES, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	24,95247	82,28840	
+YES, 12-Husb.Income=04	01-H. not owned	13,68821	73,09645	
+YES, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	14,78137	78,93401	
+YES, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	14,06844	75,12690	
+YES, 09-Wife:Mexico	01-H. not owned	14,25856	77,92208	
+YES, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	15,39924	84,15584	
+YES, 09-Wife:Mexico	08-Husb.:Mexico	16,06464	87,79221	
+YES, 08-Husb.:Mexico	01-H. not owned	14,54373	77,27273	
+YES, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	15,73194	83,58586	
+YES, 08-Husb.:Mexico	09-Wife:Mexico	16,06464	85,35354	
+YES, 03-Vechicl.=1	01-H. not owned	13,11787	89,32039	
+YES, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	11,64449	79,28803	
+YES, 12-Husb.Income=03	01-H. not owned	9,60076	90,17857	
+YES, 06-Husb.:no school	01-H. not owned	9,74335	84,36214	
+YES, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	10,17110	88,06584	
+02-Det. house, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	21,10266	81,61765	
+02-Det. house, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	12,07224	77,20365	
+02-Det. house, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	11,45437	73,25228	
+02-Det. house, 01-H. owned	10-Husb.work.class=PrivateWorker	13,92586	75,51546	
+02-Det. house, 01-H. owned	11-Wife.work.class=PrivateWorker	13,59316	73,71134	
+02-Det. house, NO	10-Husb.work.class=PrivateWorker	13,68821	75,19582	
+02-Det. house, NO	11-Wife.work.class=PrivateWorker	13,45057	73,89034	
+06-Husb.:no college, 07-Wife:no college	10-Husb.work.class=PrivateWorker	11,26426	73,14815	
+06-Husb.:no college, 07-Wife:no college	11-Wife.work.class=PrivateWorker	12,11977	78,70370	
+06-Husb.:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	17,15779	78,64924	
+06-Husb.:no college, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	10,74144	77,13311	
+06-Husb.:no college, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	10,83650	77,81570	
+06-Husb.:no college, NO	10-Husb.work.class=PrivateWorker	12,78517	75,77465	
+06-Husb.:no college, NO	11-Wife.work.class=PrivateWorker	12,50000	74,08451	
+07-Wife:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	19,20152	73,05606	
+07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	20,67490	78,66184	
+07-Wife:no college, 12-Husb.Income=04	01-H. not owned	10,40875	72,75748	
+07-Wife:no college, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	10,88403	76,07973	
+07-Wife:no college, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	11,83460	82,72425	
+07-Wife:no college, NO	01-H. not owned	12,21483	72,39437	
+07-Wife:no college, NO	10-Husb.work.class=PrivateWorker	12,73764	75,49296	
+07-Wife:no college, NO	11-Wife.work.class=PrivateWorker	13,97338	82,81690	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	22,24335	71,45038	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	24,80989	79,69466	
+11-Wife.work.class=PrivateWorker, 06-Husb.:associate	01-H. not owned	11,64449	74,69512	
+11-Wife.work.class=PrivateWorker, 06-Husb.:associate	10-Husb.work.class=PrivateWorker	12,69011	81,40244	
+11-Wife.work.class=PrivateWorker, 06-Husb.:associate	NO	12,07224	77,43902	
+11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	16,82510	76,45788	
+11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	19,24905	87,47300	
+11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	17,58555	79,91361	
+11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	16,63498	75,75758	
+11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	18,91635	86,14719	
+11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	17,58555	80,08658	
+11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	01-H. not owned	16,01711	86,63239	
+11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	15,16160	82,00514	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=03	01-H. not owned	14,06844	89,96960	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=03	10-Husb.work.class=PrivateWorker	12,69011	81,15502	
+11-Wife.work.class=PrivateWorker, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	10,45627	92,43697	
+11-Wife.work.class=PrivateWorker, 01-H. owned	10-Husb.work.class=PrivateWorker	16,01711	82,59804	
+11-Wife.work.class=PrivateWorker, 01-H. owned	02-Det. house	13,59316	70,09804	
+11-Wife.work.class=PrivateWorker, 07-Wife:associate	01-H. not owned	11,31179	72,12121	
+11-Wife.work.class=PrivateWorker, 07-Wife:associate	10-Husb.work.class=PrivateWorker	12,78517	81,51515	
+11-Wife.work.class=PrivateWorker, 07-Wife:associate	NO	13,11787	83,63636	
+11-Wife.work.class=PrivateWorker, NO	01-H. not owned	31,41635	73,85475	
+11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	34,41065	80,89385	
+12-Husb.Income=04, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	11,07414	84,11552	
+12-Husb.Income=04, 09-Wife:Mexico	08-Husb.:Mexico	10,88403	82,67148	
+12-Husb.Income=04, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	11,21673	83,98577	
+12-Husb.Income=04, 08-Husb.:Mexico	11-Wife.work.class=PrivateWorker	9,50570	71,17438	
+12-Husb.Income=04, 08-Husb.:Mexico	09-Wife:Mexico	10,88403	81,49466	
+12-Husb.Income=04, NO	01-H. not owned	16,30228	70,14315	
+12-Husb.Income=04, NO	10-Husb.work.class=PrivateWorker	17,44297	75,05112	
+12-Husb.Income=04, NO	11-Wife.work.class=PrivateWorker	17,06274	73,41513	
+06-Husb.:associate, 07-Wife:associate	10-Husb.work.class=PrivateWorker	10,07605	79,10448	
+06-Husb.:associate, 07-Wife:associate	NO	10,83650	85,07463	
+06-Husb.:associate, NO	01-H. not owned	12,40494	75,21614	
+06-Husb.:associate, NO	10-Husb.work.class=PrivateWorker	13,11787	79,53890	
+06-Husb.:associate, NO	11-Wife.work.class=PrivateWorker	12,07224	73,19885	
+09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	20,43726	77,33813	
+09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	22,24335	84,17266	
+09-Wife:Mexico, 03-Vechicl.=1	01-H. not owned	10,02852	86,47541	
+09-Wife:Mexico, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	9,98099	86,06557	
+09-Wife:Mexico, 03-Vechicl.=1	08-Husb.:Mexico	10,12357	87,29508	
+09-Wife:Mexico, 12-Husb.Income=03	01-H. not owned	9,50570	88,10573	
+09-Wife:Mexico, 12-Husb.Income=03	08-Husb.:Mexico	9,60076	88,98678	
+09-Wife:Mexico, 06-Husb.:no school	01-H. not owned	11,50190	86,42857	
+09-Wife:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	11,88213	89,28571	
+09-Wife:Mexico, 06-Husb.:no school	08-Husb.:Mexico	12,59506	94,64286	
+09-Wife:Mexico, NO	01-H. not owned	10,59886	75,59322	
+09-Wife:Mexico, NO	10-Husb.work.class=PrivateWorker	11,64449	83,05085	
+09-Wife:Mexico, NO	11-Wife.work.class=PrivateWorker	10,17110	72,54237	
+09-Wife:Mexico, NO	08-Husb.:Mexico	10,36122	73,89831	
+08-Husb.:Mexico, 03-Vechicl.=1	01-H. not owned	10,21863	87,39837	
+08-Husb.:Mexico, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	9,88593	84,55285	
+08-Husb.:Mexico, 03-Vechicl.=1	09-Wife:Mexico	10,12357	86,58537	
+08-Husb.:Mexico, 12-Husb.Income=03	09-Wife:Mexico	9,60076	90,58296	
+08-Husb.:Mexico, 06-Husb.:no school	01-H. not owned	11,83460	86,45833	
+08-Husb.:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	12,11977	88,54167	
+08-Husb.:Mexico, 06-Husb.:no school	09-Wife:Mexico	12,59506	92,01389	
+08-Husb.:Mexico, NO	01-H. not owned	10,02852	75,89928	
+08-Husb.:Mexico, NO	10-Husb.work.class=PrivateWorker	10,93156	82,73381	
+08-Husb.:Mexico, NO	11-Wife.work.class=PrivateWorker	9,50570	71,94245	
+08-Husb.:Mexico, NO	09-Wife:Mexico	10,36122	78,41727	
+03-Vechicl.=1, NO	01-H. not owned	11,97719	88,11189	
+03-Vechicl.=1, NO	02-Apart.	10,12357	74,47552	
+03-Vechicl.=1, NO	10-Husb.work.class=PrivateWorker	10,55133	77,62238	
+12-Husb.Income=03, NO	01-H. not owned	9,83840	85,18519	
+01-H. owned, NO	10-Husb.work.class=PrivateWorker	12,16730	78,28746	
+01-H. owned, NO	11-Wife.work.class=PrivateWorker	11,12167	71,55963	
+07-Wife:associate, NO	01-H. not owned	15,01901	75,05938	
+07-Wife:associate, NO	10-Husb.work.class=PrivateWorker	15,96958	79,80998	
+01-H. not owned, 02-Apart., 03-Vechicl.=2	10-Husb.work.class=PrivateWorker	19,48669	79,61165	
+01-H. not owned, 02-Apart., 03-Vechicl.=2	11-Wife.work.class=PrivateWorker	19,24905	78,64078	
+01-H. not owned, 02-Apart., 08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	12,35741	78,31325	
+01-H. not owned, 02-Apart., 08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	12,50000	79,21687	
+01-H. not owned, 02-Apart., 08-Husb.:West Europe	NO	11,83460	75,00000	
+01-H. not owned, 02-Apart., 09-Wife:West Europe	08-Husb.:West Europe	10,78897	71,60883	
+01-H. not owned, 02-Apart., 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	11,78707	78,23344	
+01-H. not owned, 02-Apart., 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	12,11977	80,44164	
+01-H. not owned, 02-Apart., 09-Wife:West Europe	NO	11,02662	73,18612	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	28,70722	72,77108	
+01-H. not owned, 02-Apart., YES	10-Husb.work.class=PrivateWorker	15,44677	80,44554	
+01-H. not owned, 02-Apart., 06-Husb.:no college	11-Wife.work.class=PrivateWorker	9,60076	77,99228	
+01-H. not owned, 02-Apart., 07-Wife:no college	10-Husb.work.class=PrivateWorker	11,64449	78,27476	
+01-H. not owned, 02-Apart., 07-Wife:no college	11-Wife.work.class=PrivateWorker	12,30989	82,74760	
+01-H. not owned, 02-Apart., 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	28,70722	81,62162	
+01-H. not owned, 02-Apart., 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	14,87643	76,71569	
+01-H. not owned, 02-Apart., 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	14,63878	75,49020	
+01-H. not owned, 02-Apart., 06-Husb.:associate	NO	9,55323	81,70732	
+01-H. not owned, 02-Apart., 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	14,21103	85,42857	
+01-H. not owned, 02-Apart., 09-Wife:Mexico	08-Husb.:Mexico	13,73574	82,57143	
+01-H. not owned, 02-Apart., 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	14,06844	84,57143	
+01-H. not owned, 02-Apart., 08-Husb.:Mexico	09-Wife:Mexico	13,73574	82,57143	
+01-H. not owned, 02-Apart., 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	14,68631	80,46875	
+01-H. not owned, 02-Apart., 12-Husb.Income=03	10-Husb.work.class=PrivateWorker	10,31369	82,19697	
+01-H. not owned, 02-Apart., 07-Wife:associate	10-Husb.work.class=PrivateWorker	10,83650	80,28169	
+01-H. not owned, 02-Apart., 07-Wife:associate	NO	11,59696	85,91549	
+01-H. not owned, 02-Apart., NO	10-Husb.work.class=PrivateWorker	24,00190	79,52756	
+01-H. not owned, 02-Apart., NO	11-Wife.work.class=PrivateWorker	22,29087	73,85827	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe	09-Wife:West Europe	12,30989	71,54696	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe	10-Husb.work.class=PrivateWorker	13,21293	76,79558	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe	11-Wife.work.class=PrivateWorker	13,40304	77,90055	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe	NO	12,30989	71,54696	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe	08-Husb.:West Europe	12,30989	73,37110	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	12,88023	76,77054	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	13,26046	79,03683	
+01-H. not owned, 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	23,66920	80,45234	
+01-H. not owned, 03-Vechicl.=2, YES	10-Husb.work.class=PrivateWorker	10,93156	79,31034	
+01-H. not owned, 03-Vechicl.=2, YES	11-Wife.work.class=PrivateWorker	10,55133	76,55172	
+01-H. not owned, 03-Vechicl.=2, 07-Wife:no college	10-Husb.work.class=PrivateWorker	10,64639	77,50865	
+01-H. not owned, 03-Vechicl.=2, 07-Wife:no college	11-Wife.work.class=PrivateWorker	11,73954	85,46713	
+01-H. not owned, 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	23,66920	79,80769	
+01-H. not owned, 03-Vechicl.=2, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	13,78327	77,33333	
+01-H. not owned, 03-Vechicl.=2, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	14,25856	80,00000	
+01-H. not owned, 03-Vechicl.=2, 07-Wife:associate	NO	9,50570	88,49558	
+01-H. not owned, 03-Vechicl.=2, NO	10-Husb.work.class=PrivateWorker	18,48859	76,57480	
+01-H. not owned, 03-Vechicl.=2, NO	11-Wife.work.class=PrivateWorker	19,10646	79,13386	
+01-H. not owned, 06-Husb.:school, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	9,69582	76,40449	
+01-H. not owned, 06-Husb.:school, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	9,69582	79,06977	
+01-H. not owned, 08-Husb.:West Europe, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	13,83080	76,17801	
+01-H. not owned, 08-Husb.:West Europe, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	14,25856	78,53403	
+01-H. not owned, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	09-Wife:West Europe	13,83080	70,28986	
+01-H. not owned, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	16,49240	83,81643	
+01-H. not owned, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	16,49240	80,32407	
+01-H. not owned, 08-Husb.:West Europe, NO	03-Vechicl.=2	12,30989	72,14485	
+01-H. not owned, 08-Husb.:West Europe, NO	09-Wife:West Europe	12,11977	71,03064	
+01-H. not owned, 08-Husb.:West Europe, NO	10-Husb.work.class=PrivateWorker	13,26046	77,71588	
+01-H. not owned, 08-Husb.:West Europe, NO	11-Wife.work.class=PrivateWorker	13,54563	79,38719	
+01-H. not owned, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	08-Husb.:West Europe	13,83080	72,93233	
+01-H. not owned, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	15,54183	81,95489	
+01-H. not owned, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	14,25856	71,59905	
+01-H. not owned, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	15,54183	78,04296	
+01-H. not owned, 09-Wife:West Europe, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	9,69582	79,68750	
+01-H. not owned, 09-Wife:West Europe, NO	03-Vechicl.=2	11,50190	70,34884	
+01-H. not owned, 09-Wife:West Europe, NO	08-Husb.:West Europe	12,11977	74,12791	
+01-H. not owned, 09-Wife:West Europe, NO	10-Husb.work.class=PrivateWorker	12,50000	76,45349	
+01-H. not owned, 09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	12,92776	79,06977	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, YES	11-Wife.work.class=PrivateWorker	18,20342	71,18959	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 02-Det. house	11-Wife.work.class=PrivateWorker	10,12357	80,68182	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	11,59696	80,79470	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 07-Wife:no college	11-Wife.work.class=PrivateWorker	15,16160	85,06667	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	17,68061	76,54321	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 06-Husb.:associate	11-Wife.work.class=PrivateWorker	9,55323	76,71756	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 06-Husb.:associate	NO	9,98099	80,15267	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	17,53802	83,10811	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	17,53802	84,63303	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 03-Vechicl.=1	02-Apart.	14,68631	75,18248	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=03	11-Wife.work.class=PrivateWorker	11,35932	74,22360	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 06-Husb.:no school	09-Wife:Mexico	10,26616	80,00000	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 06-Husb.:no school	08-Husb.:Mexico	10,45627	81,48148	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 07-Wife:associate	02-Apart.	10,83650	77,55102	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 07-Wife:associate	NO	12,02471	86,05442	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, NO	02-Apart.	24,00190	73,50801	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	25,14259	77,00146	
+01-H. not owned, YES, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	18,20342	82,54310	
+01-H. not owned, YES, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	10,93156	79,86111	
+01-H. not owned, YES, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	9,88593	72,22222	
+01-H. not owned, YES, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	12,21483	85,66667	
+01-H. not owned, YES, 09-Wife:Mexico	08-Husb.:Mexico	12,50000	87,66667	
+01-H. not owned, YES, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	12,35741	84,96732	
+01-H. not owned, YES, 08-Husb.:Mexico	09-Wife:Mexico	12,50000	85,94771	
+01-H. not owned, YES, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	10,26616	78,26087	
+01-H. not owned, 02-Det. house, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,12357	82,55814	
+01-H. not owned, 06-Husb.:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	11,59696	78,45659	
+01-H. not owned, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	15,16160	78,96040	
+01-H. not owned, 07-Wife:no college, NO	11-Wife.work.class=PrivateWorker	10,31369	84,43580	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	17,68061	79,48718	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 06-Husb.:associate	10-Husb.work.class=PrivateWorker	9,55323	82,04082	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	14,68631	87,28814	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	13,45057	79,94350	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	14,30608	86,00000	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	13,45057	80,85714	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	02-Apart.	11,31179	70,62315	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	12,92776	80,71217	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=03	10-Husb.work.class=PrivateWorker	11,35932	80,74324	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 07-Wife:associate	NO	9,98099	88,23529	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, NO	02-Apart.	22,29087	70,95310	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	25,14259	80,03026	
+01-H. not owned, 12-Husb.Income=04, NO	10-Husb.work.class=PrivateWorker	12,16730	74,63557	
+01-H. not owned, 12-Husb.Income=04, NO	11-Wife.work.class=PrivateWorker	12,35741	75,80175	
+01-H. not owned, 06-Husb.:associate, NO	02-Apart.	9,55323	77,01149	
+01-H. not owned, 06-Husb.:associate, NO	10-Husb.work.class=PrivateWorker	9,98099	80,45977	
+01-H. not owned, 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	17,53802	85,81395	
+01-H. not owned, 09-Wife:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	10,26616	89,25620	
+01-H. not owned, 09-Wife:Mexico, 06-Husb.:no school	08-Husb.:Mexico	10,93156	95,04132	
+01-H. not owned, 08-Husb.:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	10,45627	88,35341	
+01-H. not owned, 08-Husb.:Mexico, 06-Husb.:no school	09-Wife:Mexico	10,93156	92,36948	
+01-H. not owned, 03-Vechicl.=1, NO	02-Apart.	9,69582	80,95238	
+01-H. not owned, 07-Wife:associate, NO	02-Apart.	11,59696	77,21519	
+01-H. not owned, 07-Wife:associate, NO	10-Husb.work.class=PrivateWorker	12,02471	80,06329	
+02-Apart., 03-Vechicl.=2, 08-Husb.:West Europe	01-H. not owned	10,64639	92,56198	
+02-Apart., 03-Vechicl.=2, 09-Wife:West Europe	01-H. not owned	9,93346	93,72197	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	01-H. not owned	19,48669	92,13483	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	16,63498	78,65169	
+02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	01-H. not owned	19,24905	93,10345	
+02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	16,63498	80,45977	
+02-Apart., 03-Vechicl.=2, 12-Husb.Income=04	01-H. not owned	11,35932	91,92308	
+02-Apart., 03-Vechicl.=2, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	9,64829	78,07692	
+02-Apart., 03-Vechicl.=2, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	9,88593	80,00000	
+02-Apart., 03-Vechicl.=2, NO	01-H. not owned	16,68251	91,64491	
+02-Apart., 03-Vechicl.=2, NO	10-Husb.work.class=PrivateWorker	14,59125	80,15666	
+02-Apart., 03-Vechicl.=2, NO	11-Wife.work.class=PrivateWorker	14,11597	77,54569	
+02-Apart., 08-Husb.:West Europe, 09-Wife:West Europe	01-H. not owned	10,78897	94,97908	
+02-Apart., 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	12,35741	92,52669	
+02-Apart., 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	10,83650	81,13879	
+02-Apart., 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	NO	10,07605	75,44484	
+02-Apart., 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	01-H. not owned	12,50000	94,26523	
+02-Apart., 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,83650	81,72043	
+02-Apart., 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	NO	9,74335	73,47670	
+02-Apart., 08-Husb.:West Europe, NO	01-H. not owned	11,83460	93,25843	
+02-Apart., 08-Husb.:West Europe, NO	10-Husb.work.class=PrivateWorker	10,07605	79,40075	
+02-Apart., 08-Husb.:West Europe, NO	11-Wife.work.class=PrivateWorker	9,74335	76,77903	
+02-Apart., 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	11,78707	93,93939	
+02-Apart., 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	10,12357	80,68182	
+02-Apart., 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	01-H. not owned	12,11977	95,86466	
+02-Apart., 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,12357	80,07519	
+02-Apart., 09-Wife:West Europe, NO	01-H. not owned	11,02662	94,69388	
+02-Apart., 10-Husb.work.class=PrivateWorker, YES	01-H. not owned	15,44677	96,43917	
+02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:no college	01-H. not owned	11,64449	94,23077	
+02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:no college	11-Wife.work.class=PrivateWorker	10,64639	86,15385	
+02-Apart., 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	28,70722	94,52269	
+02-Apart., 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	14,87643	93,43284	
+02-Apart., 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	12,11977	76,11940	
+02-Apart., 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	14,21103	95,52716	
+02-Apart., 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	12,16730	81,78914	
+02-Apart., 10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	14,06844	97,04918	
+02-Apart., 10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	12,16730	83,93443	
+02-Apart., 10-Husb.work.class=PrivateWorker, 03-Vechicl.=1	01-H. not owned	14,68631	97,78481	
+02-Apart., 10-Husb.work.class=PrivateWorker, 12-Husb.Income=03	01-H. not owned	10,31369	96,44444	
+02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:associate	01-H. not owned	10,83650	92,30769	
+02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:associate	NO	10,07605	85,82996	
+02-Apart., 10-Husb.work.class=PrivateWorker, NO	01-H. not owned	24,00190	93,34566	
+02-Apart., 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	19,34411	75,23105	
+02-Apart., YES, 11-Wife.work.class=PrivateWorker	01-H. not owned	12,88023	95,75972	
+02-Apart., YES, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	11,02662	81,97880	
+02-Apart., YES, 08-Husb.:Mexico	01-H. not owned	9,74335	98,55769	
+02-Apart., 06-Husb.:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	9,60076	94,39252	
+02-Apart., 07-Wife:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	12,30989	94,18182	
+02-Apart., 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,64639	81,45455	
+02-Apart., 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	14,63878	94,47853	
+02-Apart., 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	12,11977	78,22086	
+02-Apart., 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	11,12167	95,90164	
+02-Apart., 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	10,12357	87,29508	
+02-Apart., 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	11,26426	96,73469	
+02-Apart., 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	9,98099	85,71429	
+02-Apart., 11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	01-H. not owned	11,31179	97,94239	
+02-Apart., 11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	10-Husb.work.class=PrivateWorker	9,64829	83,53909	
+02-Apart., 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	22,29087	94,17671	
+02-Apart., 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	19,34411	81,72691	
+02-Apart., 12-Husb.Income=04, NO	01-H. not owned	11,21673	93,28063	
+02-Apart., 06-Husb.:associate, NO	01-H. not owned	9,55323	92,20183	
+02-Apart., 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	13,73574	97,30640	
+02-Apart., 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	12,16730	86,19529	
+02-Apart., 03-Vechicl.=1, NO	01-H. not owned	9,69582	95,77465	
+02-Apart., 07-Wife:associate, NO	01-H. not owned	11,59696	92,42424	
+02-Apart., 07-Wife:associate, NO	10-Husb.work.class=PrivateWorker	10,07605	80,30303	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	13,64068	75,92593	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	13,97338	77,77778	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe	NO	12,64259	70,37037	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	09-Wife:West Europe	13,64068	71,92982	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	15,49430	81,70426	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	NO	13,40304	70,67669	
+03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	09-Wife:West Europe	13,97338	72,05882	
+03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	15,49430	79,90196	
+03-Vechicl.=2, 08-Husb.:West Europe, NO	01-H. not owned	12,30989	70,38043	
+03-Vechicl.=2, 08-Husb.:West Europe, NO	09-Wife:West Europe	12,64259	72,28261	
+03-Vechicl.=2, 08-Husb.:West Europe, NO	10-Husb.work.class=PrivateWorker	13,40304	76,63043	
+03-Vechicl.=2, 08-Husb.:West Europe, NO	11-Wife.work.class=PrivateWorker	13,49810	77,17391	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	12,88023	70,75718	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	08-Husb.:West Europe	13,64068	74,93473	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	14,87643	81,72324	
+03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	01-H. not owned	13,26046	70,63291	
+03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	13,97338	74,43038	
+03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	14,87643	79,24051	
+03-Vechicl.=2, 09-Wife:West Europe, NO	01-H. not owned	11,50190	70,14493	
+03-Vechicl.=2, 09-Wife:West Europe, NO	08-Husb.:West Europe	12,64259	77,10145	
+03-Vechicl.=2, 09-Wife:West Europe, NO	10-Husb.work.class=PrivateWorker	12,73764	77,68116	
+03-Vechicl.=2, 09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	12,69011	77,39130	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, YES	01-H. not owned	10,93156	70,55215	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, YES	11-Wife.work.class=PrivateWorker	12,45247	80,36810	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 02-Det. house	11-Wife.work.class=PrivateWorker	12,02471	79,31034	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 06-Husb.:no college	11-Wife.work.class=PrivateWorker	10,74144	81,58845	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 07-Wife:no college	01-H. not owned	10,64639	72,72727	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 07-Wife:no college	11-Wife.work.class=PrivateWorker	12,83270	87,66234	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	23,66920	71,14286	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	13,78327	71,60494	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	15,58935	80,98765	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 01-H. owned	11-Wife.work.class=PrivateWorker	9,60076	76,80608	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 07-Wife:associate	NO	10,69392	86,20690	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	20,81749	78,77698	
+03-Vechicl.=2, YES, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	12,45247	81,87500	
+03-Vechicl.=2, 02-Det. house, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	12,02471	79,81073	
+03-Vechicl.=2, 06-Husb.:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,74144	79,57746	
+03-Vechicl.=2, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	11,73954	72,86136	
+03-Vechicl.=2, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	12,83270	79,64602	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	14,25856	73,52941	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	15,58935	80,39216	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, 01-H. owned	10-Husb.work.class=PrivateWorker	9,60076	80,80000	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	19,10646	72,56318	
+03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	20,81749	79,06137	
+03-Vechicl.=2, 12-Husb.Income=04, NO	10-Husb.work.class=PrivateWorker	11,50190	75,38941	
+03-Vechicl.=2, 12-Husb.Income=04, NO	11-Wife.work.class=PrivateWorker	11,21673	73,52025	
+03-Vechicl.=2, 07-Wife:associate, NO	01-H. not owned	9,50570	70,67138	
+03-Vechicl.=2, 07-Wife:associate, NO	10-Husb.work.class=PrivateWorker	10,69392	79,50530	
+06-Husb.:school, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	9,69582	73,38129	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	13,83080	71,14914	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	03-Vechicl.=2	13,64068	70,17115	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	15,96958	82,15159	
+08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	15,96958	78,13953	
+08-Husb.:West Europe, 09-Wife:West Europe, NO	03-Vechicl.=2	12,64259	72,08672	
+08-Husb.:West Europe, 09-Wife:West Europe, NO	10-Husb.work.class=PrivateWorker	13,40304	76,42276	
+08-Husb.:West Europe, 09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	13,54563	77,23577	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	16,49240	70,67210	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	9,79087	81,74603	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	15,54183	81,14144	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	9,79087	78,62595	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	13,54563	70,37037	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	03-Vechicl.=2	13,49810	70,12346	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	09-Wife:West Europe	13,54563	70,37037	
+08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	15,54183	80,74074	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	15,54183	71,55361	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	15,96958	73,52298	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	9,88593	80,62016	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	01-H. not owned	12,50000	70,32086	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	03-Vechicl.=2	12,73764	71,65775	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	08-Husb.:West Europe	13,40304	75,40107	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	14,21103	79,94652	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	9,69582	75,83643	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	9,88593	77,32342	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	12,92776	72,14854	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	03-Vechicl.=2	12,69011	70,82228	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	08-Husb.:West Europe	13,54563	75,59682	
+09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	14,21103	79,31034	
+10-Husb.work.class=PrivateWorker, YES, 02-Det. house	11-Wife.work.class=PrivateWorker	10,31369	80,66914	
+10-Husb.work.class=PrivateWorker, YES, 07-Wife:no college	11-Wife.work.class=PrivateWorker	9,69582	84,29752	
+10-Husb.work.class=PrivateWorker, YES, 11-Wife.work.class=PrivateWorker	01-H. not owned	18,20342	72,95238	
+10-Husb.work.class=PrivateWorker, YES, 12-Husb.Income=04	01-H. not owned	10,93156	73,95498	
+10-Husb.work.class=PrivateWorker, YES, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	11,35932	76,84887	
+10-Husb.work.class=PrivateWorker, YES, 09-Wife:Mexico	01-H. not owned	12,21483	79,32099	
+10-Husb.work.class=PrivateWorker, YES, 09-Wife:Mexico	08-Husb.:Mexico	13,49810	87,65432	
+10-Husb.work.class=PrivateWorker, YES, 08-Husb.:Mexico	01-H. not owned	12,35741	78,54985	
+10-Husb.work.class=PrivateWorker, YES, 08-Husb.:Mexico	09-Wife:Mexico	13,49810	85,80060	
+10-Husb.work.class=PrivateWorker, YES, 03-Vechicl.=1	01-H. not owned	10,26616	88,16327	
+10-Husb.work.class=PrivateWorker, 02-Det. house, 01-H. owned	11-Wife.work.class=PrivateWorker	10,97909	78,83959	
+10-Husb.work.class=PrivateWorker, 02-Det. house, NO	11-Wife.work.class=PrivateWorker	10,78897	78,81944	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no college, 07-Wife:no college	11-Wife.work.class=PrivateWorker	9,60076	85,23207	
+10-Husb.work.class=PrivateWorker, 06-Husb.:no college, NO	11-Wife.work.class=PrivateWorker	9,88593	77,32342	
+10-Husb.work.class=PrivateWorker, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	15,16160	73,33333	
+10-Husb.work.class=PrivateWorker, 07-Wife:no college, NO	11-Wife.work.class=PrivateWorker	10,97909	86,19403	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	17,68061	71,26437	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 06-Husb.:associate	01-H. not owned	9,55323	75,28090	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 06-Husb.:associate	NO	10,07605	79,40075	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	14,68631	76,29630	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	15,39924	80,00000	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	14,30608	75,62814	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	15,39924	81,40704	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 03-Vechicl.=1	01-H. not owned	12,92776	85,26646	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=03	01-H. not owned	11,35932	89,51311	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 07-Wife:associate	NO	10,78897	84,38662	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	25,14259	73,06630	
+10-Husb.work.class=PrivateWorker, 12-Husb.Income=04, NO	11-Wife.work.class=PrivateWorker	13,45057	77,11172	
+10-Husb.work.class=PrivateWorker, 06-Husb.:associate, NO	01-H. not owned	9,98099	76,08696	
+10-Husb.work.class=PrivateWorker, 06-Husb.:associate, NO	11-Wife.work.class=PrivateWorker	10,07605	76,81159	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	17,53802	78,84615	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 06-Husb.:no school	01-H. not owned	10,26616	86,40000	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 06-Husb.:no school	08-Husb.:Mexico	11,16920	94,00000	
+10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico, 06-Husb.:no school	01-H. not owned	10,45627	86,27451	
+10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico, 06-Husb.:no school	09-Wife:Mexico	11,16920	92,15686	
+10-Husb.work.class=PrivateWorker, 07-Wife:associate, NO	01-H. not owned	12,02471	75,29762	
+YES, 02-Det. house, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,31369	83,14176	
+YES, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	9,69582	78,76448	
+YES, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	9,88593	70,27027	
+YES, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	11,35932	80,74324	
+YES, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	10,31369	87,14859	
+YES, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	10,17110	85,94378	
+YES, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	10,59886	85,11450	
+YES, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	10,17110	81,67939	
+YES, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	12,50000	77,81065	
+YES, 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	13,49810	84,02367	
+02-Det. house, 11-Wife.work.class=PrivateWorker, 01-H. owned	10-Husb.work.class=PrivateWorker	10,97909	80,76923	
+02-Det. house, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,78897	80,21201	
+06-Husb.:no college, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	9,60076	79,21569	
+06-Husb.:no college, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	9,88593	79,08745	
+07-Wife:no college, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	10,31369	73,80952	
+07-Wife:no college, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,97909	78,57143	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=04, NO	01-H. not owned	12,35741	72,42340	
+11-Wife.work.class=PrivateWorker, 12-Husb.Income=04, NO	10-Husb.work.class=PrivateWorker	13,45057	78,83008	
+11-Wife.work.class=PrivateWorker, 06-Husb.:associate, NO	10-Husb.work.class=PrivateWorker	10,07605	83,46457	
+11-Wife.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	13,45057	76,48649	
+11-Wife.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	15,39924	87,56757	
+11-Wife.work.class=PrivateWorker, 07-Wife:associate, NO	01-H. not owned	9,98099	76,08696	
+11-Wife.work.class=PrivateWorker, 07-Wife:associate, NO	10-Husb.work.class=PrivateWorker	10,78897	82,24638	
+09-Wife:Mexico, 08-Husb.:Mexico, 06-Husb.:no school	01-H. not owned	10,93156	86,79245	
+09-Wife:Mexico, 08-Husb.:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	11,16920	88,67925	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	15,49430	79,51220	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	15,49430	80,49383	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, NO	10-Husb.work.class=PrivateWorker	13,40304	80,34188	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, NO	11-Wife.work.class=PrivateWorker	13,16540	78,91738	
+01-H. not owned, 02-Apart., 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	10,12357	81,92308	
+01-H. not owned, 02-Apart., 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,12357	80,98859	
+01-H. not owned, 02-Apart., 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	9,60076	81,45161	
+01-H. not owned, 02-Apart., 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	9,60076	79,21569	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:no college	11-Wife.work.class=PrivateWorker	9,98099	85,71429	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	11,45437	76,99681	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	11,83460	83,27759	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	11,83460	84,12162	
+01-H. not owned, 02-Apart., 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	18,20342	75,84158	
+01-H. not owned, 02-Apart., YES, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,50380	81,54982	
+01-H. not owned, 02-Apart., 07-Wife:no college, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	9,98099	81,08108	
+01-H. not owned, 02-Apart., 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	11,45437	78,24675	
+01-H. not owned, 02-Apart., 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	10-Husb.work.class=PrivateWorker	9,64829	86,75214	
+01-H. not owned, 02-Apart., 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	9,60076	85,23207	
+01-H. not owned, 02-Apart., 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	18,20342	81,66311	
+01-H. not owned, 02-Apart., 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	11,83460	86,15917	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe	10-Husb.work.class=PrivateWorker	9,55323	77,60618	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe	11-Wife.work.class=PrivateWorker	9,50570	77,22008	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	09-Wife:West Europe	9,55323	72,30216	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	10,83650	82,01439	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	09-Wife:West Europe	9,50570	70,92199	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,83650	80,85106	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker	NO	9,60076	71,63121	
+01-H. not owned, 03-Vechicl.=2, 08-Husb.:West Europe, NO	11-Wife.work.class=PrivateWorker	9,60076	77,99228	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	08-Husb.:West Europe	9,55323	74,16974	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	10,50380	81,54982	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	9,50570	71,68459	
+01-H. not owned, 03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	10,50380	79,21147	
+01-H. not owned, 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04	11-Wife.work.class=PrivateWorker	11,59696	84,13793	
+01-H. not owned, 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	02-Apart.	13,40304	72,49357	
+01-H. not owned, 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	14,92395	80,71979	
+01-H. not owned, 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	10-Husb.work.class=PrivateWorker	11,59696	81,33333	
+01-H. not owned, 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	14,92395	78,10945	
+01-H. not owned, 08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	11,26426	81,44330	
+01-H. not owned, 08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	11,26426	79,00000	
+01-H. not owned, 08-Husb.:West Europe, 09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	9,50570	78,43137	
+01-H. not owned, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,93156	82,43728	
+01-H. not owned, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	03-Vechicl.=2	9,60076	70,87719	
+01-H. not owned, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	09-Wife:West Europe	9,50570	70,17544	
+01-H. not owned, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,93156	80,70175	
+01-H. not owned, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	11,26426	72,47706	
+01-H. not owned, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,17110	81,36882	
+01-H. not owned, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	08-Husb.:West Europe	9,50570	73,52941	
+01-H. not owned, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,17110	78,67647	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, YES, 09-Wife:Mexico	08-Husb.:Mexico	10,64639	87,15953	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, YES, 08-Husb.:Mexico	09-Wife:Mexico	10,64639	86,15385	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	08-Husb.:Mexico	11,78707	80,25890	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	09-Wife:Mexico	11,78707	82,39203	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	02-Apart.	18,20342	72,40076	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 12-Husb.Income=04, NO	11-Wife.work.class=PrivateWorker	9,64829	79,29688	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 06-Husb.:no school	08-Husb.:Mexico	9,69582	94,44444	
+01-H. not owned, 10-Husb.work.class=PrivateWorker, 08-Husb.:Mexico, 06-Husb.:no school	09-Wife:Mexico	9,69582	92,72727	
+01-H. not owned, YES, 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	10,64639	85,17110	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04, NO	10-Husb.work.class=PrivateWorker	9,64829	78,07692	
+01-H. not owned, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	10-Husb.work.class=PrivateWorker	11,78707	87,63251	
+01-H. not owned, 09-Wife:Mexico, 08-Husb.:Mexico, 06-Husb.:no school	10-Husb.work.class=PrivateWorker	9,69582	88,69565	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	15,49430	93,14286	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	01-H. not owned	13,40304	91,85668	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	11,40684	78,17590	
+02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	13,16540	93,26599	
+02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	11,40684	80,80808	
+02-Apart., 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	10,12357	93,42105	
+02-Apart., 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	9,60076	94,83568	
+02-Apart., 10-Husb.work.class=PrivateWorker, YES, 11-Wife.work.class=PrivateWorker	01-H. not owned	10,50380	95,25862	
+02-Apart., 10-Husb.work.class=PrivateWorker, 07-Wife:no college, 11-Wife.work.class=PrivateWorker	01-H. not owned	9,98099	93,75000	
+02-Apart., 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	11,45437	94,50980	
+02-Apart., 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico	01-H. not owned	9,64829	95,30516	
+02-Apart., 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 08-Husb.:Mexico	01-H. not owned	9,60076	96,19048	
+02-Apart., 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	18,20342	94,10319	
+02-Apart., 10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	11,83460	97,26563	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	01-H. not owned	9,55323	70,03484	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	11-Wife.work.class=PrivateWorker	11,12167	81,53310	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker	NO	9,79087	71,77700	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker	10-Husb.work.class=PrivateWorker	11,12167	79,59184	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, NO	10-Husb.work.class=PrivateWorker	9,79087	77,44361	
+03-Vechicl.=2, 08-Husb.:West Europe, 09-Wife:West Europe, NO	11-Wife.work.class=PrivateWorker	9,69582	76,69173	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	09-Wife:West Europe	11,12167	71,77914	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, NO	09-Wife:West Europe	9,79087	73,04965	
+03-Vechicl.=2, 08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,74144	80,14184	
+03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	9,60076	71,12676	
+03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	09-Wife:West Europe	9,69582	71,83099	
+03-Vechicl.=2, 08-Husb.:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,74144	79,57746	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	10,50380	70,60703	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	08-Husb.:West Europe	11,12167	74,76038	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	08-Husb.:West Europe	9,79087	76,86567	
+03-Vechicl.=2, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,21863	80,22388	
+03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	08-Husb.:West Europe	9,69582	76,40449	
+03-Vechicl.=2, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,21863	80,52434	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04	01-H. not owned	11,59696	74,39024	
+03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	14,92395	71,68950	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker	01-H. not owned	11,26426	70,53571	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	03-Vechicl.=2	9,79087	73,04965	
+08-Husb.:West Europe, 09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,74144	80,14184	
+08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	9,50570	70,17544	
+08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	03-Vechicl.=2	9,69582	71,57895	
+08-Husb.:West Europe, 09-Wife:West Europe, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,74144	79,29825	
+08-Husb.:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	10,93156	70,33639	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	10,17110	71,57191	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	03-Vechicl.=2	10,21863	71,90635	
+09-Wife:West Europe, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	08-Husb.:West Europe	10,74144	75,58528	
+10-Husb.work.class=PrivateWorker, YES, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	10,64639	78,87324	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 12-Husb.Income=04, NO	01-H. not owned	9,64829	71,73145	
+10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico	01-H. not owned	11,78707	76,54321	
+10-Husb.work.class=PrivateWorker, 09-Wife:Mexico, 08-Husb.:Mexico, 06-Husb.:no school	01-H. not owned	9,69582	86,80851	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, NO	11-Wife.work.class=PrivateWorker	10,69392	79,78723	
+01-H. not owned, 02-Apart., 03-Vechicl.=2, 11-Wife.work.class=PrivateWorker, NO	10-Husb.work.class=PrivateWorker	10,69392	81,22744	
+01-H. not owned, 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	02-Apart.	10,69392	71,65605	
+02-Apart., 03-Vechicl.=2, 10-Husb.work.class=PrivateWorker, 11-Wife.work.class=PrivateWorker, NO	01-H. not owned	10,69392	93,75000	

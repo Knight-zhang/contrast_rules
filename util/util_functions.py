@@ -167,13 +167,44 @@ def get_different_rules(first_file, second_file):
                     print(line2)
 
 
+def compare_with_statistica(file, statistica_file):
+    """
+    Compares the results of the given file with association rules generates with statistica
+
+    :returns a list of the different rules that exist in statistica but not in the file
+    """
+    similarities = 0
+    differences = 0
+    different_rules = []
+    with open(statistica_file) as open_statistica_file:
+        open_statistica_file.readline()
+        for line1 in open_statistica_file:
+            temp1 = line1.split('\t')
+            temp1[0] = sorted(temp1[0].split(', '))
+            with open(file) as open_file:
+                open_file.readline()
+                for line2 in open_file:
+                    temp2 = line2.split('\t')
+                    temp2[0] = sorted(temp2[0].split(','))
+                    if temp1[:2] == temp2[:2]:
+                        similarities += 1
+                        break
+                if temp1[:2] != temp2[:2]:
+                    differences += 1
+                    different_rules.append(line1)
+    print('There are {} similar rules and {} different rules'.format(similarities, differences))
+    return different_rules
+
+
 #######################
 # entry point
 #######################
 if __name__ == '__main__':
     #compare_outputs('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
     #                '../results/fpgrowth/toMine_1_1_supp_200_conf_07.txt')
-    get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
-                        '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
+    #get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
+    #                    '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
+    different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
+                                              '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
     #get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")
