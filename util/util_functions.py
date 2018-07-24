@@ -187,7 +187,9 @@ def compare_with_statistica(file, statistica_file):
                     temp2 = line2.split('\t')
                     temp2[0] = sorted(temp2[0].split(','))
                     if temp1[:2] == temp2[:2]:
-                        similarities += 1
+                        # Comparing the difference between the supports with a fixed values that can be changed
+                        if (float(temp1[3].replace(',', '.'))/100) - float(temp2[6]) < 0.001:
+                            similarities += 1
                         break
                 if temp1[:2] != temp2[:2]:
                     differences += 1
