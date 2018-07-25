@@ -134,6 +134,9 @@ def get_support_count():
         print('{} : {}'.format(el, tot_support_num[el]))
 
 
+#######################
+# Compare the outputs of two files
+#######################
 def compare_outputs(first_file, second_file):
     """
     Compares the rules from two different files
@@ -154,6 +157,9 @@ def compare_outputs(first_file, second_file):
     print('There are {} similar rules and {} different rules.'.format(similar, different))
 
 
+#######################
+# Get the different rules between two files
+#######################
 def get_different_rules(first_file, second_file):
     """
     Get the rules that exist in the second file but do not exist
@@ -170,6 +176,9 @@ def get_different_rules(first_file, second_file):
                     print(line2)
 
 
+#######################
+# Compare the rules with statistica
+#######################
 def compare_with_statistica(file, statistica_file):
     """
     Compares the results of the given file with association rules generates with statistica
@@ -202,6 +211,15 @@ def compare_with_statistica(file, statistica_file):
 
 
 #######################
+# Get scr_patterns from CAR_file
+#######################
+def get_scrpatterns_from_car(file):
+    with open(file) as open_file:
+        line = open_file.readline()
+        print(line.split('\t')[:-1])
+
+
+#######################
 # entry point
 #######################
 if __name__ == '__main__':
@@ -211,5 +229,6 @@ if __name__ == '__main__':
     #                    '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
     #different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
     #                                          '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
-    get_support_count()
+    get_scrpatterns_from_car('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt')
+    #get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")

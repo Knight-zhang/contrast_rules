@@ -31,7 +31,7 @@ def run(transactions_file_name, min_supp_count, min_conf, output_file_name=None)
 if __name__ == '__main__':
     path_name = '../data/'
     transactions_file_name = 'toMine_1_1.txt'
-    min_supp_count = 100
+    min_supp_count = 10
     min_conf = 0.6
     output_file_name = '../results/scr_apriori/{}_supp_{}_conf_{}.txt'.\
         format(transactions_file_name[:transactions_file_name.find('.txt')], min_supp_count,
