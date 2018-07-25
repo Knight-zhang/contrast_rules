@@ -13,6 +13,8 @@ from itertools import chain
 from itertools import product
 from itertools import tee
 from memory_profiler import profile
+sys.path.insert(0, '../util')
+import constants
 
 
 ################################################################################
@@ -23,7 +25,7 @@ class TransactionManager(object):
     Transaction managers.
     """
 
-    def __init__(self, transactions, non_varying, varying, classifier):
+    def __init__(self, transactions, inv, var, classifier):
         """
         Initialize.
 
@@ -41,8 +43,8 @@ class TransactionManager(object):
         self.__items = []
         self.__classifier = classifier
         self.__transaction_index_map = {}
-        self.__non_varying = non_varying
-        self.__varying = varying
+        self.__inv = inv
+        self.__var = var
 
         for transaction in transactions:
             self.add_transaction(transaction)
@@ -64,15 +66,6 @@ class TransactionManager(object):
                 self.__transaction_index_map[item] = set()
             self.__transaction_index_map[item].add(self.__num_transaction)
         self.__num_transaction += 1
-
-    def create_attribute_value_map(self):
-        for item in set(self.__items):
-            if item in self.__classifier:
-                continue
-            if item[:2] not in self.__attribute_value_map.keys():
-                self.__attribute_value_map[item[:2]] = [frozenset([item])]
-                continue
-            self.__attribute_value_map[item[:2]].append(frozenset([item]))
 
     def calc_support(self, items):
         """
@@ -117,7 +110,7 @@ class TransactionManager(object):
                 sum_indexes_2 = sum_indexes_2.intersection(indexes_class_2)
 
         # Calculate and return the support.
-        return float(len(sum_indexes_1)) / self.__num_class_1, float(len(sum_indexes_2)) / self.__num_class_2
+        return len(sum_indexes_1), len(sum_indexes_2)
 
     def initial_candidates(self):
         """
@@ -168,28 +161,28 @@ class TransactionManager(object):
         return self.__classifier
 
     @property
-    def non_varying(self):
+    def invariable_attributes(self):
         """
         Returns the set of the classifier
         """
-        return self.__non_varying
+        return self.__inv
 
     @property
-    def varying(self):
+    def variable_attributes(self):
         """
         Returns the set of the classifier
         """
-        return self.__varying
+        return self.__var
 
     @staticmethod
-    def create(transactions, non_varying, varying, classifier):
+    def create(transactions, inv, var, classifier):
         """
         Create the TransactionManager with a transaction instance.
         If the given instance is a TransactionManager, this returns itself.
         """
         if isinstance(transactions, TransactionManager):
             return transactions
-        return TransactionManager(transactions, non_varying, varying, classifier)
+        return TransactionManager(transactions, inv, var, classifier)
 
 
 # Ignore name errors because these names are namedtuples.
@@ -198,8 +191,10 @@ SupportRecord = namedtuple( # pylint: disable=C0103
 RelationRecord = namedtuple( # pylint: disable=C0103
     'SCR_pattern', ('rule_pairs',))
 AttributeRecord = namedtuple( # pylint: disable=C0103
-    'Rule', ('attributes', 'invariable_items', 'variable_items', 'antecedent_support', 'class_name',
-             'rule_support', 'confidence',))
+    'Rule', ('attributes', 'invariable_items', 'variable_items', 'support',))
+OrderedStatistic = namedtuple( # pylint: disable=C0103
+    'Rule', ('attributes', 'invariable_items', 'variable_items', 'antecedent_count', 'class_name',
+             'rule_count', 'confidence'))
 
 
 ################################################################################
@@ -260,17 +255,17 @@ def gen_support_records(transaction_manager, min_support, **kwargs):
         relations = set()
         for relation_candidate in candidates:
             support = transaction_manager.calc_support(relation_candidate)
-            # Exclude candidates with support less then min_support in both classes
+            # Exclude candidates with support less than min_support in both classes
             if support[0] < min_support and support[1] < min_support:
                 continue
             candidate_set = frozenset(relation_candidate)
             relations.add(candidate_set)
-            # If both supports are greater than min_support
+            """# If both supports are greater than min_support
             # We don't return them, but we store them and keep looking
             if support[0] > min_support and support[1] > min_support:
-                continue
-            # Exclude candidates whith no varying attributes
-            if not attributes(relation_candidate).intersection(transaction_manager.varying):
+                continue"""
+            # Exclude candidates whith no variable attributes
+            if not attributes(relation_candidate).intersection(transaction_manager.variable_attributes):
                 continue
             # Exclude candidates with length 1
             if length == 1:
@@ -295,23 +290,18 @@ def gen_attribute_records(transaction_manager, record, min_support):
     invariable_items = []
     for item in items:
         attributes += item[:2]
-        if item[:2] in transaction_manager.non_varying:
+        if item[:2] in transaction_manager.invariable_attributes:
             invariable_items.append(item)
         else:
             variable_items.append(item)
     variable_items = frozenset(variable_items)
     invariable_items = frozenset(invariable_items)
     if variable_items != frozenset([]):
-        class_name = set()
-        if record.support[0] > min_support:
-            class_name.add(transaction_manager.classifier[0])
-        if record.support[1] > min_support:
-            class_name.add(transaction_manager.classifier[1])
         yield AttributeRecord(
-            attributes, invariable_items, variable_items, 0, class_name, 0, record.support)
+            attributes, invariable_items, variable_items, record.support)
 
 
-def filter_ordered_statistics(transaction_manager, ordered_statistics, pairs_count, **kwargs):
+def filter_ordered_statistics(transaction_manager, attribute_records, pairs_count, **kwargs):
     """
     Filter AttributeRecord objects that have no contrasting rules.
 
@@ -321,41 +311,23 @@ def filter_ordered_statistics(transaction_manager, ordered_statistics, pairs_cou
         pair_count -- A dictionary of attributes and their counts
 
     """
-    min_confidence = kwargs.get('min_confidence', 0.0)
+    min_confidence = kwargs.get('min_confidence', 0.5)
     g = {k: v for k, v in pairs_count.items() if v > 1}
-    for ordered_statistic in ordered_statistics:
-        if ordered_statistic.attributes in g.keys():
-            cond_set = ordered_statistic.confidence
-            if len(ordered_statistic.class_name) == 1:
-                class_index = {cond_set.index(max(cond_set))}
-            else:
-                class_index = {0, 1}
-
-            global_antecedent_count = cond_set[0]*transaction_manager.num_class_1 + cond_set[1]*transaction_manager.num_class_2
-            global_antecedent_support = float(global_antecedent_count) / transaction_manager.num_transaction
-            confidence = {}
-            for i in class_index:
-                if i == 0:
-                    temp = ((cond_set[i]*transaction_manager.num_class_1)/transaction_manager.num_transaction) \
-                             / global_antecedent_support
-                    rule_support = float(cond_set[i]*transaction_manager.num_class_1) \
-                             / transaction_manager.num_transaction
-                    if temp > min_confidence:
-                        confidence[i] = temp
-                else:
-                    temp = ((cond_set[i] * transaction_manager.num_class_2) / transaction_manager.num_transaction) \
-                                 / global_antecedent_support
-                    rule_support = float(cond_set[i] * transaction_manager.num_class_1) \
-                                   / transaction_manager.num_transaction
-                    if temp > min_confidence:
-                        confidence[i] = temp
-            if confidence:
-                yield AttributeRecord(
-                    ordered_statistic.attributes,
-                    ordered_statistic.invariable_items,
-                    ordered_statistic.variable_items,
-                    global_antecedent_support,
-                    ordered_statistic.class_name,
+    for attribute_record in attribute_records:
+        if attribute_record.attributes in g.keys():
+            cond_set = attribute_record.support
+            class_index = cond_set.index(max(cond_set))
+            class_name = transaction_manager.classifier[class_index]
+            rule_support = cond_set[class_index]
+            global_antecedent_count = cond_set[0] + cond_set[1]
+            confidence = float(rule_support) / global_antecedent_count
+            if confidence >= min_confidence:
+                yield OrderedStatistic(
+                    attribute_record.attributes,
+                    attribute_record.invariable_items,
+                    attribute_record.variable_items,
+                    global_antecedent_count,
+                    class_name,
                     rule_support,
                     confidence)
 
@@ -363,7 +335,7 @@ def filter_ordered_statistics(transaction_manager, ordered_statistics, pairs_cou
 ################################################################################
 # API function.
 ################################################################################
-def gen_pairs(transactions, classifier, non_varying, varying, **kwargs):
+def generate_contrasting_rules(transactions, classifier, inv, var, min_support, **kwargs):
     """
     Executes SCR-Apriori algorithm and returns a AttributeRecord generator.
 
@@ -378,8 +350,7 @@ def gen_pairs(transactions, classifier, non_varying, varying, **kwargs):
     """
     # Parse the arguments.
 
-    min_support = kwargs.get('min_support', 0.1)
-    min_confidence = kwargs.get('min_confidence', 0.0)
+    min_confidence = kwargs.get('min_confidence', 0.5)
 
     # Check arguments.
     if min_support <= 0:
@@ -394,13 +365,13 @@ def gen_pairs(transactions, classifier, non_varying, varying, **kwargs):
         '_filter_ordered_statistics', filter_ordered_statistics)
 
     # Calculate supports.
-    transaction_manager = TransactionManager.create(transactions, non_varying, varying, classifier)
+    transaction_manager = TransactionManager.create(transactions, inv, var, classifier)
     support_records = _gen_support_records(
         transaction_manager, min_support)
 
     # Calculate ordered stats.
     support_records, support_records_clone = tee(support_records)
-    res = []
+    res = {}
     """
     Filling a set containing the count of each attribute
     """
@@ -413,7 +384,7 @@ def gen_pairs(transactions, classifier, non_varying, varying, **kwargs):
             else:
                 pairs_count[attribute_record.attributes] += 1
 
-    count = 0
+    #count = 0
     for support_record in support_records_clone:
         filtered_statistics = list(
             _filter_ordered_statistics(
@@ -425,34 +396,79 @@ def gen_pairs(transactions, classifier, non_varying, varying, **kwargs):
         )
         if not filtered_statistics:
             continue
-        if count == 0:
+        if filtered_statistics[0].attributes not in res:
+            res[filtered_statistics[0].attributes] = []
+        res[filtered_statistics[0].attributes].append(filtered_statistics)
+        """if count == 0:
             res.append(filtered_statistics)
             count += 1
             continue
         if res[count-1][0].attributes == filtered_statistics[0].attributes:
             res[count-1] += filtered_statistics
-            continue
-        res.append(filtered_statistics)
-        count += 1
-
-    res = filter_pairs(res)
+            continue"""
+        #res.append(filtered_statistics)
+        #count += 1
+    res = filter_pairs(res, transaction_manager)
     return res
 
 
-def filter_pairs(list_of_pairs):
-    to_remove = []
-    for pairs in list_of_pairs:
-        if len(pairs) == 1:
-            to_remove.append(pairs)
+def filter_pairs(res, transaction_manager):
+    list_of_pairs = []
+    for val in list(res.values()):
+        list_of_pairs.append(list(combinations(val, 2)))
+    rules = []
+    for group in list_of_pairs:
+        temp = set()
+        if not group:
             continue
-        if pairs[0].invariable_items != pairs[1].invariable_items:
-            to_remove.append(pairs)
-        if pairs[0].invariable_items == frozenset():
-            if pairs[0].variable_items.intersection(pairs[1].variable_items) == frozenset():
-                to_remove.append(pairs)
-    for x in to_remove:
-        list_of_pairs.remove(x)
-    return list_of_pairs
+        for pair in group:
+            if pair[0][0].class_name == pair[1][0].class_name:
+                continue
+            if pair[0][0].invariable_items != pair[1][0].invariable_items:
+                continue
+            if pair[0][0].invariable_items == frozenset():
+                if pair[0][0].variable_items.intersection(pair[1][0].variable_items) == frozenset():
+                    continue
+            temp.add(pair[0][0])
+            temp.add(pair[1][0])
+        if temp != set():
+            rules.append(temp)
+    links = {}
+    for group in rules:
+        for rule1 in group:
+            links[rule1] = ''
+            for rule2 in group:
+                if rule1 != rule2 and rule1.class_name != rule2.class_name:
+                    links[rule1] += str(list(group).index(rule2) + 1) + ','
+            links[rule1] = links[rule1][:-1]
+    rules = []
+    att = list(links.keys())[0].attributes
+    for rule in links.keys():
+        items = rule.variable_items.union(rule.invariable_items)
+        antecedent = tuple(sorted(items))
+        # transform antecedent and consequent into sets
+        antecedent_set = set(antecedent)
+        consequent_str = rule.class_name
+        consequent_set = set([consequent_str])
+        antecedent_str = ''
+        for el in antecedent:
+            antecedent_str += el + ','
+        antecedent_str = antecedent_str[:-1]
+        a_rule = {constants.LHS: antecedent_str, constants.RHS: consequent_str,
+                  constants.LHS_SET: antecedent_set, constants.RHS_SET: consequent_set,
+                  constants.LHS_SUPP_COUNT: rule.antecedent_count,
+                  constants.RULE_SUPP_COUNT: rule.rule_count,
+                  constants.LHS_SUPP: float(rule.antecedent_count)
+                                      / transaction_manager.num_transaction,
+                  constants.RULE_SUPP: float(
+                      rule.rule_count) / transaction_manager.num_transaction,
+                  constants.RULE_CONF: rule.confidence,
+                  constants.LINKS: links[rule]}
+        if rule.attributes != att:
+            att = rule.attributes
+            rules.append(set())
+        rules.append(a_rule)
+    return rules
 
 
 def load_base(location, delimiter):
@@ -486,13 +502,3 @@ def attributes(itemset):
         res.add(item[:2])
     return res
 
-
-def run(url, **kwargs):
-    delimiter = kwargs.get('delimiter', ';')
-    class_index = kwargs.get('class_index', -1)
-    min_support = kwargs.get('min_support', 0.01)
-    min_confidence = kwargs.get('min_confidence', 0.01)
-    data = load_base(url, delimiter)
-    classifier, transactions = initialize(data, class_index)
-    results = list(CAR_apriori(transactions, classifier, min_support=min_support, min_confidence=min_confidence))
-    return results

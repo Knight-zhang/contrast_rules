@@ -41,6 +41,9 @@ def rules_to_string(rules_list):
                                                            constants.LHS_SUPP, constants.RULE_SUPP, constants.RULE_CONF,
                                                            constants.LINKS)
     for rule in rules_list:
+        if rule == set():
+            str_result += '\n'
+            continue
         str_result += '{}\t{}\t{}\t{}\t{}\t{}\t{}\t{}\n'.format(
             rule[constants.LHS], rule[constants.RHS],
             rule[constants.LHS_SUPP_COUNT], rule[constants.RULE_SUPP_COUNT],
@@ -115,8 +118,8 @@ def get_support_count():
     :return:
     """
     file_with_transactions = '../data/toMine_1_1.txt'
-    itemsets_to_find_str = ['02-Apart.',
-                            '02-Apart.,01-H. not owned',
+    itemsets_to_find_str = ['01-H. not owned,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker',
+                            '01-H. not owned,03-Vechicl.=1,10-Husb.work.class=PrivateWorker,11-Wife.work.class=PrivateWorker,NO',
                             'NO',
                             '01-H. not owned,11-Wife.work.class=GovernmWorker,NO',
                             '01-H. not owned,11-Wife.work.class=GovernmWorker',
@@ -202,11 +205,11 @@ def compare_with_statistica(file, statistica_file):
 # entry point
 #######################
 if __name__ == '__main__':
-    compare_outputs('../results/apriori/toMine_3_3_supp_100_conf_06.txt',
-                    '../results/fpgrowth/toMine_3_3_supp_100_conf_06.txt')
+    #compare_outputs('../results/apriori/toMine_3_3_supp_100_conf_06.txt',
+    #                '../results/fpgrowth/toMine_3_3_supp_100_conf_06.txt')
     #get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
     #                    '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
     #different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
     #                                          '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
-    #get_support_count()
+    get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")
