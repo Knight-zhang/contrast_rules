@@ -1,5 +1,6 @@
 import constants
 import sys
+import collections
 
 
 #######################
@@ -202,14 +203,177 @@ def compare_with_statistica(file, statistica_file):
 
 
 #######################
+# comparing SCR_patterns
+#######################
+def read_rule_from_str(str_value):
+    """
+    Construct a rule in a form of dictionary from its string representation
+    """
+    temp = str_value.split("\t")
+    # recreate links and also subtract 1 from each link (like this a link can be used as an index in an array)
+    links_str = temp[7].rstrip()
+    links_arr = []
+    for link in links_str.split(','):
+        links_arr.append(int(link) - 1)
+    a_rule = {constants.LHS: temp[0], constants.LHS_SET: set(temp[0].split(",")),
+              constants.RHS: temp[1], constants.RHS_SET: {temp[1]},
+              constants.LHS_SUPP_COUNT: temp[2],
+              constants.RULE_SUPP_COUNT: temp[3], constants.LHS_SUPP: temp[4], constants.RULE_SUPP: temp[5],
+              constants.RULE_CONF: temp[6], constants.LINKS: links_arr}
+    return a_rule
+
+
+def read_scr_patterns_from_file(file_name):
+    scr_patterns_list = []
+    with open(file_name) as input_file:
+        data = input_file.read().rstrip().split('\n')
+        # skip the first line with headers
+        scr_pattern = []
+        for i in range(1, len(data)):
+            line = data[i]
+            if len(line) == 0:
+                # new pattern starts
+                scr_patterns_list.append(transform_scr_pattern_into_dic(scr_pattern[:]))
+                scr_pattern = []
+            else:
+                # continue generating rules for current pattern
+                a_rule = read_rule_from_str(line)
+                scr_pattern.append(a_rule)
+        # and add the last pattern
+        scr_patterns_list.append(transform_scr_pattern_into_dic(scr_pattern[:]))
+
+    return scr_patterns_list
+
+
+def transform_scr_pattern_into_dic(scr_patter):
+    """
+    Transfrom scr_pattern represented as an array into a dictionary.
+    key is 'LHS==>RHS'
+    links are replaces with keys
+    """
+    pos_to_key = {}
+
+    scr_pattern_dic = {}
+    for i in range(0, len(scr_patter)):
+        rule = scr_patter[i]
+        key = rule[constants.LHS] + '==>' + rule[constants.RHS]
+        scr_pattern_dic[key] = rule
+        pos_to_key[i] = key
+
+    # now update the links
+    for key in scr_pattern_dic:
+        rule = scr_pattern_dic[key]
+        rule_links_array = rule[constants.LINKS]
+        rule_links_key = []
+        for link in rule_links_array:
+            rule_links_key.append(pos_to_key[link])
+        rule[constants.LINKS_KEYS] = rule_links_key
+        rule[constants.POS_TO_KEY] = pos_to_key
+    return scr_pattern_dic
+
+
+def transform_scr_dic_into_array(scr_dic):
+    """
+    Transfrom scr_pattern represented as a dictionary into an array.
+    key is 'LHS==>RHS'
+    links are replaces with keys
+    """
+    scr_pattern_arr = []
+    key = next(iter(scr_dic))
+    pos_to_key = scr_dic[key][constants.POS_TO_KEY]
+    for pos in pos_to_key:
+        key = pos_to_key[pos]
+        scr_pattern_arr.append(scr_dic[key])
+    return scr_pattern_arr
+
+
+def is_rules_match(rule_1, rule_2):
+    """
+    We already know that antecedents and consequents of rule_1 and rule_2 match.
+    Just compare support_counts and links
+    """
+    result = False
+    if rule_1[constants.LHS_SUPP_COUNT] == rule_2[constants.LHS_SUPP_COUNT] \
+            and rule_1[constants.RULE_SUPP_COUNT] == rule_2[constants.RULE_SUPP_COUNT]:
+        # now compare the set of links
+        if collections.Counter(rule_1[constants.LINKS_KEYS]) == collections.Counter(rule_1[constants.LINKS_KEYS]):
+            result = True
+    return result
+
+
+def is_patterns_match(scr_pat_1, scr_pat_2):
+    # compare if scr-patterns match
+    # perform multiple tests
+    result = False
+
+    # 1. number of rules should be the same
+    if len(scr_pat_1) == len(scr_pat_2):
+        # 2. compare the set of keys, they should be the same
+        if collections.Counter(scr_pat_1.keys()) == collections.Counter(scr_pat_2.keys()):
+            # 3. now for every rule get its matching pair and compare supports and links
+            rules_matching = True
+            for key in scr_pat_1:
+                rule_1 = scr_pat_1[key]
+                rule_2 = scr_pat_2[key]
+                if not is_rules_match(rule_1, rule_2):
+                    rules_matching = False
+                    break
+            result = rules_matching
+    return result
+
+
+def compare_files_with_scr_patterns(file_name_1, file_name_2):
+    # read patterns from both files into memory
+    scr_patterns_1 = read_scr_patterns_from_file(file_name_1)
+    scr_patterns_2 = read_scr_patterns_from_file(file_name_2)
+    found_1 = []
+    found_2 = []
+
+    # now try to find matches
+    for i in range(0, len(scr_patterns_1)):
+        scr_pat_1 = scr_patterns_1[i]
+        for j in range(0, len(scr_patterns_2)):
+            if j not in found_2:
+                scr_pat_2 = scr_patterns_2[j]
+                if is_patterns_match(scr_pat_1, scr_pat_2):
+                    found_1.append(i)
+                    found_2.append(j)
+                    break
+
+    # now found_1 and found_1 contain the indices of found scr_patterns, the others are missing
+    missing_scr_1 = []
+    missing_scr_2 = []
+    for i in range(0, len(scr_patterns_1)):
+        if i not in found_1:
+            missing_scr_1.append(transform_scr_dic_into_array(scr_patterns_1[i]))
+    for j in range(0, len(scr_patterns_2)):
+        if j not in found_2:
+            missing_scr_2.append(transform_scr_dic_into_array(scr_patterns_2[j]))
+
+    print('Total found = {}'.format(len(found_1)))
+    print('no matches from {} = {}'.format(file_name_1, len(missing_scr_1)))
+    print('no matches from {} = {}'.format(file_name_2, len(missing_scr_2)))
+
+    if len(missing_scr_1) > 0:
+        print('\nMissing from {}...'.format(file_name_1))
+        print(patterns_to_string(missing_scr_1))
+
+    if len(missing_scr_2) > 0:
+        print('Missing from {}...'.format(file_name_2))
+        print(patterns_to_string(missing_scr_2))
+
+
+#######################
 # entry point
 #######################
 if __name__ == '__main__':
+    compare_files_with_scr_patterns('../results/scr_fpgrowth/toMine_1_1_supp_100_conf_05.txt',
+                                    '../results/scr_fpgrowth/toMine_1_1_supp_100_conf_05.txt')
     #compare_outputs('../results/apriori/toMine_3_3_supp_100_conf_06.txt',
     #                '../results/fpgrowth/toMine_3_3_supp_100_conf_06.txt')
     #get_different_rules('../results/car_apriori/toMine_1_1_supp_200_conf_07.txt',
     #                    '../results/apriori/toMine_1_1_supp_200_conf_07.txt')
     #different_rules = compare_with_statistica('../results/apriori/toMine_1_1_supp_200_conf_07.txt',
     #                                          '../results/statistica/toMine_1_1_supp_200_conf_07.txt')
-    get_support_count()
+    #get_support_count()
     #get_all_possible_values_of_attributes("../data/toMine_1_1.txt")
