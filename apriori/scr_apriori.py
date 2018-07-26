@@ -438,7 +438,14 @@ def filter_pairs(res, transaction_manager):
         for rule1 in group:
             links[rule1] = ''
             for rule2 in group:
-                if rule1 != rule2 and rule1.class_name != rule2.class_name:
+                if rule1 != rule2 and rule1.class_name != rule2.class_name \
+                        and (rule1.invariable_items == rule2.invariable_items) \
+                        and (rule1.invariable_items != frozenset() or rule1.variable_items.intersection(rule2.variable_items) != frozenset()):
+                    # tests:
+                    # 1. rules are different
+                    # 2. classes are different
+                    # 3. invariant attributes should have the same values
+                    # 4. if no invariant attributes, at least 1 varying attribute should have the same values
                     links[rule1] += str(list(group).index(rule2) + 1) + ','
             links[rule1] = links[rule1][:-1]
     rules = []
