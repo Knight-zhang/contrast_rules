@@ -305,7 +305,7 @@ def is_rules_match(rule_1, rule_2):
     if rule_1[constants.LHS_SUPP_COUNT] == rule_2[constants.LHS_SUPP_COUNT] \
             and rule_1[constants.RULE_SUPP_COUNT] == rule_2[constants.RULE_SUPP_COUNT]:
         # now compare the set of links
-        if collections.Counter(rule_1[constants.LINKS_KEYS]) == collections.Counter(rule_1[constants.LINKS_KEYS]):
+        if collections.Counter(rule_1[constants.LINKS_KEYS]) == collections.Counter(rule_2[constants.LINKS_KEYS]):
             result = True
     return result
 
